@@ -8,7 +8,6 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  keyframes,
 } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import PageLink from "next/link"
@@ -18,16 +17,6 @@ function formatForLink(text: string) {
   const link = text.replace(" ", "-").toLowerCase()
   return link
 }
-
-const animationKeyframes = keyframes`
-  0% { transform: scale(1) rotate(0); border-radius: 20%; }
-  25% { transform: scale(2) rotate(0); border-radius: 20%; }
-  50% { transform: scale(2) rotate(270deg); border-radius: 50%; }
-  75% { transform: scale(1) rotate(270deg); border-radius: 50%; }
-  100% { transform: scale(1) rotate(0); border-radius: 20%; }
-`
-
-const animation = `${animationKeyframes} 2s ease-in-out infinite`
 
 export default function () {
   return (
@@ -120,15 +109,18 @@ export default function () {
           >
             <motion.div
               viewport={{
-                margin: "360px 0px -240px 0px",
+                margin: "100% 0px -25% 0px",
               }}
               initial={{
                 opacity: 0,
-                y: "5rem",
+                y: "25%",
               }}
               whileInView={{
                 opacity: 1,
                 y: 0,
+              }}
+              transition={{
+                duration: 0.5,
               }}
             >
               <Image
