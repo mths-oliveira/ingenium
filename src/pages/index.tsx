@@ -9,154 +9,70 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react"
-import { motion } from "framer-motion"
-import PageLink from "next/link"
-import page from "../data/sobre-nos.json"
-
-function formatForLink(text: string) {
-  const link = text.replace(" ", "-").toLowerCase()
-  return link
-}
-
+import NextLink from "next/link"
+import { formatForLink } from "./[page]"
+const pageNames = ["Sobre nós", "Serviços", "Produtos", "Certificações"]
 export default function () {
   return (
-    <Flex flexDirection="column">
-      <Flex
-        bgSize="cover"
-        bgImage={page.imageSrc}
-        height={{
-          base: "calc(100vh - 12.5rem)",
-          sm: "calc(100vh - 15rem)",
-          lg: "calc(100vh - 22.5rem)",
-          xl: "calc(100vh - 7.5rem)",
-        }}
-        flexDirection="column"
-        justifyContent="space-between"
-        color="white"
-      >
-        <Flex
-          justifyContent="center"
-          bgImage="linear-gradient(to top, transparent, rgba(0,0,0,0.5))"
-          paddingTop="0.5rem"
-          paddingBottom="0.75rem"
-          overflow="hidden"
-          visibility={{
-            base: "hidden",
-            sm: "initial",
-          }}
-        >
-          {page.sections.map((section) => (
-            <Link
-              href={"#" + formatForLink(section.title)}
-              key={"link" + section.title}
-              padding="0.5rem 1rem"
-              borderRadius="md"
-              fontWeight="500"
-              _hover={{
-                bg: "rgba(0,0,0,0.05)",
-              }}
-            >
-              {section.title}
-            </Link>
-          ))}
-        </Flex>
-        <Stack
-          padding={{
-            base: "3rem 1rem",
-            sm: "3.5rem 5rem",
-            md: "3.5rem 7.5rem",
-          }}
-          bgImage="linear-gradient(transparent, rgba(0,0,0,0.5))"
-        >
-          <Link as={PageLink} fontWeight="500" width="fit-content" href="/">
-            Início
-          </Link>
-          <Heading
-            as="h1"
-            fontSize={{
-              base: "lg",
-              md: "xl",
-            }}
-          >
-            {page.title}
-          </Heading>
-        </Stack>
-      </Flex>
-      <Stack
-        padding={{
-          sm: "5rem",
-          md: "7.5rem",
-        }}
-        spacing={{
-          sm: "5rem",
-          md: "7.5rem",
-        }}
-      >
-        {page.sections.map((section, i) => (
-          <SimpleGrid
-            as="section"
-            id={formatForLink(section.title)}
-            key={section.title}
-            columns={{
-              base: 1,
-              sm: 2,
-            }}
-            columnGap={{
-              sm: "5rem",
-              md: "7.5rem",
-            }}
-            alignItems="center"
-          >
-            <motion.div
-              viewport={{
-                margin: "100% 0px -25% 0px",
-              }}
-              initial={{
-                opacity: 0,
-                y: "25%",
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 0.5,
-              }}
-            >
-              <Image
-                width="100%"
-                src={section.imageSrc}
-                display={{
-                  base: i === 0 ? "none" : "initial",
-                  sm: "initial",
+    <Flex
+      height="100vh"
+      flexDirection="column"
+      alignItems="center"
+      paddingX="7.5rem"
+    >
+      <Flex as="header" flexShrink="0" justifyContent="center">
+        <List display="flex" paddingY="1rem">
+          {pageNames.map((pageName) => (
+            <ListItem key={pageName}>
+              <Link
+                as={NextLink}
+                fontWeight="500"
+                href={"/" + formatForLink(pageName)}
+                padding="0.5rem 1rem"
+                overflow="hidden"
+                position="relative"
+                _after={{
+                  content: `''`,
+                  height: "3px",
+                  width: 0,
+                  position: "absolute",
+                  left: "1rem",
+                  bottom: 0,
+                  bg: "gray",
+                  transition:
+                    "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
                 }}
-              />
-            </motion.div>
-            <Stack
-              padding={{
-                base: "3rem 1rem",
-                sm: 0,
-              }}
-              order={{
-                sm: i % 2 === 0 ? 1 : -1,
-              }}
-            >
-              <Heading>{section.title}</Heading>
-              {Array.isArray(section.content) ? (
-                <List listStyleType="initial">
-                  {section.content.map((content) => (
-                    <ListItem key={content} transform="translateX(1.25rem)">
-                      {content}
-                    </ListItem>
-                  ))}
-                </List>
-              ) : (
-                <Text>{section.content}</Text>
-              )}
-            </Stack>
-          </SimpleGrid>
-        ))}
-      </Stack>
+                _hover={{
+                  _after: {
+                    width: "50%",
+                  },
+                }}
+              >
+                {pageName}
+              </Link>
+            </ListItem>
+          ))}
+        </List>
+      </Flex>
+      <SimpleGrid
+        columns={2}
+        justifyContent="center"
+        alignItems="center"
+        marginY="auto"
+        gap="5rem"
+        maxWidth="65rem"
+      >
+        <Stack>
+          <Heading as="h1">Lorem ipsum dolor</Heading>
+          <Text>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+            fugiat eos similique, sequi voluptatem assumenda veritatis,
+            distinctio laudantium ullam recusandae, modi dolor aspernatur culpa
+            impedit! Eaque incidunt dolorem quam necessitatibus!
+          </Text>
+        </Stack>
+        <Image src="https://media.licdn.com/dms/image/C4D22AQFhTbVVQK-riw/feedshare-shrink_800/0/1668886602606?e=1675296000&v=beta&t=ZRthaInEYjS4AGIWdsU02I9gqqQvUkDlnjkU6KdMNYQ" />
+      </SimpleGrid>
     </Flex>
   )
 }

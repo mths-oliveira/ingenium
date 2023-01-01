@@ -1,0 +1,47 @@
+{
+  "title": "Certificações",
+  "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "sections": [
+    {
+      "title": "Bosch",
+      "content": [
+        "Uma das maiores fabricantes de sistemas de segurança eletrônica do mundo. Possuímos em nossa equipe certificação Bosch Professional, Expert e Master em:",
+        "CFTV",
+        "Detecção e alarme de incêndio",
+        "Controle de acesso",
+        "Alarme de intrusão",
+        "Sonorização"
+      ],
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Rexroth",
+      "content": [
+        "Divisão de automação da Bosch, permite que façamos integração nativa com dispositivos de segurança eletrônica e automação predial. Possuímos em nossa equipe certificação Rexroth nas seguintes linhas:",
+        "CLP’s e controladores embarcados",
+        "Inversores de frequência",
+        "Módulos de Entrada e saída"
+      ],
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Microsoft",
+      "content": [
+        "Sem dúvida a fabricante de alguns dos melhores e mais aceitos sistemas de controle de dados do mundo. Possuímos em nossa equipe certificação Microsoft nos seguintes produtos:",
+        "Azure",
+        "365",
+        "Server"
+      ],
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Ubiquiti",
+      "content": [
+        "Um dos maiores fabricantes americanos de tecnologia de conexão e gestão de dados, a UBIQUITI vem ganhando uma parcela considerável do mercado brasileiro. E acompanhando essa tendência, e visando oferecer as melhores soluções possíveis, aceleramos nosso processo de certificação. Possuímos em nossa equipe certificação Ubiquiti / Unifi nas seguintes áreas:",
+        "Broadband",
+        "Enterprise"
+      ],
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    }
+  ]
+}

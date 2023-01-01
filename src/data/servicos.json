@@ -1,0 +1,43 @@
+{
+  "title": "Serviços",
+  "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "sections": [
+    {
+      "title": "Áreas de atuação",
+      "content": [
+        "Automação predial (BMS): Controle e monitoramento de Iluminação, Energia, Gás, Água, Ventilação, Exaustão e Ar condicionado.",
+        "Segurança eletrônica: CFTV, Detecção e alarme de incêndio, Controle de acesso, Alarme de intrusão e Sonorização.",
+        "TI: Switches, Roteadores, Firewall e Telefonia IP.",
+        "Elétrica: Infraestrutura, Quadros, Geradores, Nobreaks e Para raios.",
+        "Mecatrônica: Equipamentos de segurança.",
+        "Serralheria: Concertinas, cercas e alambrados."
+      ],
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Consultoria",
+      "content": "Independente do seu sistema já existir ou for apenas uma idéia, colocaremos à sua disposição nosso time de engenharia, que irá orientá-lo quanto as reais necessidades da sua aplicação. Indicando os melhores equipamentos do mercado, com o melhor custo-benefício, que sejam os mais adequados para tornar seu empreendimento referência em termos de tecnologia e segurança.",
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Projetos",
+      "content": "Desenvolvemos projetos em plataforma BIM ou CAD, em todas nossas áreas de atuação. Desde projetos conceituais e básicos, a projetos executivos com toda documentação complementar inclusa: memoriais descritivos, listas de materiais, diagramas e afins.",
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Instalação",
+      "content": "Somos capacitados para implantação de toda e qualquer solução dentro de nossa área de atuação. Fazemos todo acompanhamento de materiais e equipamentos durante a obra. Oferecemos um serviço ‘turn key’, trabalhando desde a construção de infraestrutura, cabeamento, conectorização e ‘start up’ de sistemas.",
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Retrofit",
+      "content": "Em sistemas já implantados, em que é necessário mais do que a penas uma reforma, mas uma reconstrução completa dos sistemas, o ‘retrofit’ é o processo que avalia o que está implantado, sugere as adequações necessárias para suprir as novas necessidades do empreendimento e as executa;",
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "title": "Manutenção",
+      "content": "Infelizmente, no Brasil, a manutenção de infraestrutura é ainda visto de forma secundária. E isso gera uma infinidade de problemas para as empresas. Por isso, criamos um setor especializado em compreender as reais demandas dos empreendimentos, e criar planos de manutenção, com disponibilização de mão de obra, com ‘KPI’s’ definidos, e rotinas que mudam a forma de gestão desse setor.",
+      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    }
+  ]
+}

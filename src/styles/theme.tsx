@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react"
+import { Box, extendTheme } from "@chakra-ui/react"
 
 export const theme = extendTheme({
   fonts: {
@@ -6,7 +6,7 @@ export const theme = extendTheme({
     body: `'Poppins', sans-serif`,
   },
   fontSizes: {
-    xs: "12px",
+    xs: "14px",
     sm: "16px",
     md: "24px",
     lg: "36px",
@@ -36,6 +36,11 @@ export const theme = extendTheme({
       },
       "h1, h2": {
         transform: "translateY(-0.25rem)",
+      },
+      ".line-clamp": {
+        display: " -webkit-box",
+        WebkitLineClamp: 3,
+        WebkitBoxOrient: "vertical",
       },
     },
   },
