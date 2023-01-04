@@ -13,34 +13,24 @@ import { motion } from "framer-motion"
 import PageLink from "next/link"
 import pages from "../data"
 import { useRouter } from "next/router"
+import { formatForLink } from "../utils/remove-accent"
 
-export function formatForLink(text: string) {
-  const link = removeAccent(text).replace(/\W/g, "-").toLowerCase()
-  return link
-}
-
-function removeAccent(text: string) {
-  const unaccentedText = text.normalize("NFD").replace(/[^a-z\s]/gi, "")
-  return unaccentedText
-}
-
-const pageNames = ["sobre-nos", "servicos", "produtos", "certificacoes"]
+const pageNames = Object.keys(pages)
 
 export default function () {
   const router = useRouter()
-  let pageName = pageNames[0]
   if (
-    router.query.page &&
-    typeof router.query.page === "string" &&
-    pageNames.includes(router.query.page)
-  ) {
-    pageName = router.query.page
-  }
-  const page = pages[pageName]
+    !router.query.page ||
+    typeof router.query.page !== "string" ||
+    !pageNames.includes(router.query.page)
+  )
+    return
+  const page = pages[router.query.page]
   return (
     <Flex flexDirection="column">
       <Flex
         bgSize="cover"
+        bgPosition="top center"
         bgImage={page.imageSrc}
         height={{
           base: "calc(100vh - 12.5rem)",
@@ -58,51 +48,56 @@ export default function () {
           bgImage="linear-gradient(to top, transparent, rgba(0,0,0,0.5))"
           paddingY="0.5rem"
           paddingX="7.5rem"
-          overflowX="auto"
+          overflowX={{
+            base: "auto",
+            sm: "hidden",
+          }}
           visibility={{
             base: "hidden",
             sm: "initial",
           }}
         >
-          <List
-            display="flex"
-            overflow="hidden"
-            paddingBottom="0.5rem"
-            marginX="-1rem"
-          >
-            {page.sections.map((section) => (
-              <ListItem key={"link" + section.title}>
-                <Link
-                  className="line-clamp"
-                  overflow="hidden"
-                  href={"#" + formatForLink(section.title)}
-                  fontSize={pageName === "produtos" ? "xs" : "sm"}
-                  fontWeight="500"
-                  height="fit-content"
-                  padding="0.5rem 1rem"
-                  position="relative"
-                  _after={{
-                    content: `''`,
-                    height: "3px",
-                    width: 0,
-                    position: "absolute",
-                    left: "1rem",
-                    bottom: 0,
-                    bg: "#fff",
-                    transition:
-                      "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
-                  }}
-                  _hover={{
-                    _after: {
-                      width: "50%",
-                    },
-                  }}
-                >
-                  {section.title}
-                </Link>
-              </ListItem>
-            ))}
-          </List>
+          <nav>
+            <List
+              display="flex"
+              overflow="hidden"
+              paddingBottom="0.5rem"
+              marginX="-1rem"
+            >
+              {page.sections.map((section) => (
+                <ListItem key={"link" + section.title}>
+                  <Link
+                    className="line-clamp"
+                    overflow="hidden"
+                    href={"#" + formatForLink(section.title)}
+                    fontSize={router.query.page === "produtos" ? "xs" : "sm"}
+                    fontWeight="500"
+                    height="fit-content"
+                    padding="0.5rem 1rem"
+                    position="relative"
+                    _after={{
+                      content: `''`,
+                      height: "3px",
+                      width: 0,
+                      position: "absolute",
+                      left: "1rem",
+                      bottom: 0,
+                      bg: "#fff",
+                      transition:
+                        "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
+                    }}
+                    _hover={{
+                      _after: {
+                        width: "50%",
+                      },
+                    }}
+                  >
+                    {section.title}
+                  </Link>
+                </ListItem>
+              ))}
+            </List>
+          </nav>
         </Flex>
         <Stack
           padding={{
@@ -127,6 +122,7 @@ export default function () {
         </Stack>
       </Flex>
       <Stack
+        as="main"
         padding={{
           sm: "5rem",
           md: "7.5rem",
@@ -143,7 +139,7 @@ export default function () {
             key={section.title}
             columns={{
               base: 1,
-              sm: 2,
+              md: 2,
             }}
             columnGap={{
               sm: "5rem",
@@ -153,7 +149,7 @@ export default function () {
           >
             <motion.div
               viewport={{
-                margin: "100% 0px -25% 0px",
+                margin: "50% 0px -25% 0px",
               }}
               initial={{
                 opacity: 0,
@@ -164,12 +160,15 @@ export default function () {
                 y: 0,
               }}
               transition={{
+                type: "spring",
+                bounce: 0.25,
                 duration: 0.5,
               }}
             >
               <Image
-                width="100%"
                 src={section.imageSrc}
+                alt={section.title}
+                width="100%"
                 display={{
                   base: i === 0 ? "none" : "initial",
                   sm: "initial",
@@ -179,15 +178,23 @@ export default function () {
             <Stack
               padding={{
                 base: "3rem 1rem",
-                sm: 0,
+                sm: "3.5rem 0",
+                md: 0,
               }}
               order={{
-                sm: i % 2 === 0 ? 1 : -1,
+                md: i % 2 === 0 ? 1 : -1,
               }}
             >
               <Heading>{section.title}</Heading>
               {Array.isArray(section.content) ? (
-                <List listStyleType="initial">
+                <List
+                  listStyleType="initial"
+                  sx={{
+                    ">li:not(:first-of-type)": {
+                      marginTop: "0.5rem",
+                    },
+                  }}
+                >
                   {section.content.map((content) => (
                     <ListItem key={content} transform="translateX(1.25rem)">
                       {content}

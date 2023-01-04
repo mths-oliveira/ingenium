@@ -8,7 +8,7 @@ export const theme = extendTheme({
   fontSizes: {
     xs: "14px",
     sm: "16px",
-    md: "24px",
+    md: "20px",
     lg: "36px",
     xl: "48px",
   },
@@ -38,6 +38,7 @@ export const theme = extendTheme({
         transform: "translateY(-0.25rem)",
       },
       ".line-clamp": {
+        overflow: "hidden",
         display: " -webkit-box",
         WebkitLineClamp: 3,
         WebkitBoxOrient: "vertical",

@@ -1,36 +1,36 @@
 {
   "title": "Produtos",
-  "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "imageSrc": "/produtos.jpg",
   "sections": [
     {
       "title": "Software de automação e gestão predial",
-      "content": "Desenvolvemos um sistema de gestão do tipo BMS (Building Management System). O sistema foi pensado para atuar em conjunto com os mecanismos de automação de portas (PORT-CEL-001 / PORT-CIR-001). Contudo, sua aplicação é muito mais ampla. Além do ambiente prisional, ele é aplicável em ambiente industrial e predial. Sendo possível agregar, além de abertura e fechamento de portas, sistema de controle de acesso, acionamento e desligamento de cargas elétricas, gestão de equipamentos, medição de consumo de energia, água e HVAC. A interface é extremamente amigável, com possibilidade de controle via sistema eletromecânico (botoeiras), computador, tela touchscreen, smartphone e tablets. Com uma vasta gama de possibilidades de retirada de relatórios, permite um controle fino sobre todos os sistemas.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "content": "Sistema de gestão do tipo BMS (Building Management System), aplicável em ambiente prisional, industrial e predial. Sendo possível agregar abertura e fechamento de portas, sistema de controle de acesso, acionamento e desligamento de cargas elétricas, gestão de equipamentos, medição de consumo de energia, água e HVAC. A interface é extremamente amigável, com possibilidade de controle via sistema eletromecânico (botoeiras), computador, tela touchscreen, smartphone e tablets. Com uma vasta gama de possibilidades de retirada de relatórios, permite um controle fino sobre todos os sistemas.",
+      "imageSrc": "/software-de-automaçao.jpg"
     },
     {
       "title": "Portas automáticas para celas",
       "content": "Dispositivo desenvolvido especificamente para aplicação em ambiente prisional, para fechamento de celas. É um dos ambientes mais inóspitos e sujeitos a vandalismo possível. O mecanismo foi pensado para ser submetido a todo tipo de tentativa de violação possível dentro do ambiente, que fica 24 horas a mercê. Com sistema de abertura automático e possibilidade de redundância manual, travas por solenóide de tração e trancas redundantes, é o sistema ideal para essa aplicação. Podem ser construídas tanto em grade quanto em chapa de aço.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "imageSrc": "/portas-automaticas-para-celas.jpg"
     },
     {
       "title": "Portas automáticas para circulações em ambiente prisional",
       "content": "Diferente do dispositivo das celas, a possibilidade de vandalismo é menor, porém com maior demanda de abertura e fechamento por dia. Então o dispositivo foi aprimorado visando sua utilização específica, e mantendo o mesmo nivel de robustez e segurança do dispositivo para celas. Podem ser construídas tanto em grade quanto em chapa de aço.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "imageSrc": "/portas-automaticas-para-circulaçoes-em-ambiente-prisional.jpg"
     },
     {
       "title": "Dilacerador de pneus",
       "content": "É o dispositivo adequado para retenção de veículos que tentem acessar áreas isoladas ou controladas. Com corpo totalmente construído em aço maciço, e com peças cortadas a laser para garantir o máximo de performance. Se transforma em um obstáculo intransponível para veículos de pequeno e médio porte, causando graves avarias a veículos de grande porte, independente de seu peso. O acionamento pode ser manual, com botoeira, ou ainda vinculado a um sistema computadorizado de automação.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "imageSrc": "/dilacerador-de-pneus.jpg"
     },
     {
       "title": "Bollards",
       "content": "Sistema de acionamento que impede completamente o acesso à área protegida. A parte exposta é feita em aço maciço, com diversos tipos de acabamento. A parte enterrada é feita de liga de metal adequada para cada aplicação, e de acordo com o nivel de proteção que se pretende prever. Com corpo enterrado composto de 2 a 5 vezes sua dimensão exposta, pode ser acionado de forma manual, com botoeira, ou ainda vinculado a um sistema computadorizado de automação.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "imageSrc": "/bollards.jpg"
     },
     {
       "title": "Intercomunicadores antivandalismo",
       "content": "Sistema de comunicação interno de alta resistência. Possui corpo em chapa de aço completamente a prova de vandalismo. Com sistema aberto, pode comunicar com central própria ou existente via cabo paralelo simples. Sua instalação pode ser aparente, ou embutida. Produto ideal para aplicações de alta demanda como unidades prisionais, plataformas petrolíferas, portos, aeroportos, túneis e elevadores.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "imageSrc": "/intercomunicadores.jpg"
     }
   ]
 }

@@ -1,40 +1,41 @@
 {
   "title": "Sobre nós",
-  "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "imageSrc": "/quem-somos.jpg",
   "sections": [
     {
       "title": "Quem somos",
-      "content": "A Ingenium é formada por um grupo multidisciplinar, composto por colaboradores, parceiros, fornecedores e clientes. Que juntos, constituem uma extensa e complexa cadeia de relações, que somadas suas habilidades técnicas, de gestão e expertises, somos capazes de elevar e tornar real todo e qualquer conceito nas áreas de engenharia e tecnologia, voltadas à automação e segurança eletrônica.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "content": "Fundada em 2014, a Ingenium Tecnologia é uma das maiores instituições de automação prisional, predial, industrial e segurança eletronica do Brasil, participamos de grandes projetos corporativos, além de shoppings e estádios de futebol, trazemos todo know how de execução e gerenciamento de obras de grande porte.",
+
+      "imageSrc": "/sobre-nos.jpg"
     },
     {
       "title": "Missão",
-      "content": "Projetar, construir, implantar e manter os sistemas de automação e segurança eletrônica mais incríveis do mundo.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "content": "Projetar, construir, implantar e manter os sistemas de automação e segurança eletrônica mais eficientes do mundo.",
+      "imageSrc": "/missao.jpg"
     },
     {
       "title": "Visão",
-      "content": "Ser líder em implantação de sistemas complexos de automação e segurança eletrônica no Brasil até 2030, em termos de faturamento, relevância e reconhecimento do mercado.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "content": "Ser líder em implantação dos maiores sistemas de automação e segurança eletrônica no Brasil, em termos de faturamento, relevância e participação de mercado.",
+      "imageSrc": "/visao.jpg"
     },
     {
       "title": "Valores",
       "content": [
         "Seja profissional e se divirta no processo.",
-        "Conhecimento é o que nos dá poder de realizar qualquer coisa.",
         "Amor e paixão cabem em qualquer relação.",
-        "Falhas e mudanças não são aceitas, são esperadas e muito bem vindas.",
-        "Uma mente de olhos e ouvidos abertos se inspira e pode inovar sempre.",
         "Simplicidade e humildade agregam valor a tudo e a todos.",
+        "Falhas e mudanças não só são aceitas, como são esperadas e muito bem vindas.",
+        "Uma mente de olhos e ouvidos abertos se inspira e pode inovar sempre.",
+        "Conhecimento é o que nos dá poder de realizar qualquer coisa.",
         "Não existe distância entre liderança e companheirismo.",
         "O bom relacionamento é a tônica da qualidade de vida e dos negócios."
       ],
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "imageSrc": "/valores.jpg"
     },
     {
       "title": "Propósito",
-      "content": "Transformar o presente em futuro, contribuindo para a segurança, conforto e bem estar de todos que pudermos alcançar.",
-      "imageSrc": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "content": "Revolucionar o sistema prisional brasileiro, trazendo mais segurança, conforto e bem estar para todos.",
+      "imageSrc": "/proposito.jpg"
     }
   ]
 }

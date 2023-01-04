@@ -1,4 +1,5 @@
 import {
+  Box,
   Flex,
   Heading,
   Image,
@@ -10,18 +11,28 @@ import {
   Text,
 } from "@chakra-ui/react"
 import NextLink from "next/link"
-import { formatForLink } from "./[page]"
+import { formatForLink } from "../utils/remove-accent"
 const pageNames = ["Sobre nós", "Serviços", "Produtos", "Certificações"]
 export default function () {
   return (
     <Flex
-      height="100vh"
       flexDirection="column"
       alignItems="center"
-      paddingX="7.5rem"
+      paddingX={{
+        base: "0",
+        sm: "5rem",
+        md: "12.5rem",
+      }}
     >
-      <Flex as="header" flexShrink="0" justifyContent="center">
-        <List display="flex" paddingY="1rem">
+      <Flex
+        as="header"
+        flexShrink="0"
+        justifyContent={{
+          sm: "center",
+        }}
+        overflowX="auto"
+      >
+        <List display="flex" paddingY="1rem" flexShrink={0}>
           {pageNames.map((pageName) => (
             <ListItem key={pageName}>
               <Link
@@ -55,23 +66,47 @@ export default function () {
         </List>
       </Flex>
       <SimpleGrid
-        columns={2}
+        columns={{
+          base: 1,
+          md: 2,
+        }}
+        paddingY={{
+          base: "3.5rem",
+          md: "12.5rem",
+        }}
         justifyContent="center"
         alignItems="center"
-        marginY="auto"
-        gap="5rem"
-        maxWidth="65rem"
+        gap={{
+          base: "3.5rem",
+          md: "7.5rem",
+        }}
       >
-        <Stack>
-          <Heading as="h1">Lorem ipsum dolor</Heading>
+        <Stack
+          paddingX={{
+            base: "1rem",
+            md: 0,
+          }}
+          order={{
+            base: 1,
+            md: 0,
+          }}
+        >
+          <Heading as="h1">Automação e segurança eletrônica</Heading>
           <Text>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-            fugiat eos similique, sequi voluptatem assumenda veritatis,
-            distinctio laudantium ullam recusandae, modi dolor aspernatur culpa
-            impedit! Eaque incidunt dolorem quam necessitatibus!
+            Da idealização à instalação e manutenção, somos capazes de tornar
+            real todo e qualquer conceito nas áreas de engenharia e tecnologia,
+            voltadas à automação prisional, predial, industrial e segurança
+            eletronica.
           </Text>
         </Stack>
-        <Image src="https://media.licdn.com/dms/image/C4D22AQFhTbVVQK-riw/feedshare-shrink_800/0/1668886602606?e=1675296000&v=beta&t=ZRthaInEYjS4AGIWdsU02I9gqqQvUkDlnjkU6KdMNYQ" />
+        <Box
+          paddingX={{
+            base: "3.5rem",
+            sm: "7.5rem",
+          }}
+        >
+          <Image src="/ingenium.png" />
+        </Box>
       </SimpleGrid>
     </Flex>
   )
