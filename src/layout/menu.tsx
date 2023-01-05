@@ -69,7 +69,7 @@ export function Menu() {
               maxWidth="5rem"
               height={{
                 base: "3rem",
-                sm: "initial",
+                md: "initial",
               }}
             />
           </Link>

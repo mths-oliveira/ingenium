@@ -3,114 +3,139 @@ import {
   Flex,
   Heading,
   Image,
-  Link,
-  List,
-  ListItem,
   SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react"
-import NextLink from "next/link"
-import { formatForLink } from "../utils/remove-accent"
 import pages from "../data"
+import Link from "next/link"
+import { motion } from "framer-motion"
+import { MdArrowForward } from "react-icons/md"
 const pageNames = Object.keys(pages)
+
+interface Link {
+  text: string
+  href: string
+}
+
+interface Section {
+  title: string
+  content: string
+  imageSrc: string
+  link: Link
+}
+const sections: Section[] = [
+  {
+    title: "Ingenium Tecnologia",
+    content:
+      "Ingenium é um conceito. Seu significado literal remete às origens da definição de engenharia, como a ciência, a arte e a profissão de adquirir e de aplicar os conhecimentos matemáticos, técnicos e científicos na criação, aperfeiçoamento e implementação de materiais, estruturas, máquinas, aparelhos, sistemas ou processos. Ingenium é a condição que nos permite manter a mente sempre disposta a absorver todo e qualquer conhecimento em múltiplas áreas, que colaborem para o desenvolvimento de tecnologias que possam melhorar a vida humana.",
+    imageSrc: "/ingenium.jpg",
+    link: {
+      href: "/sobre-nos",
+      text: "Conheça a Ingenium",
+    },
+  },
+  {
+    title: "Automação e segurança eletrônica",
+    content:
+      "Da idealização à instalação e manutenção, somos capazes de tornar real todo e qualquer conceito nas áreas de engenharia e tecnologia, voltadas à automação predial, industrial, prisional e segurança eletrônica.",
+    imageSrc: "/ajudar.jpg",
+    link: {
+      href: "/serviços",
+      text: "Descubra como podemos ajudar a sua empresa",
+    },
+  },
+]
+
 export default function () {
   return (
-    <Flex
+    <Stack
       flexDirection="column"
-      alignItems="center"
-      paddingX={{
-        base: "0",
-        sm: "5rem",
-        md: "12.5rem",
+      padding={{
+        sm: "0 5rem 2rem",
+        md: "7.5rem",
       }}
     >
-      <Flex
-        as="header"
-        flexShrink="0"
-        justifyContent={{
-          sm: "center",
-        }}
-        overflowX="auto"
-      >
-        <List display="flex" paddingY="1rem" flexShrink={0}>
-          {pageNames.map((pageName) => (
-            <ListItem key={pageName}>
-              <Link
-                as={NextLink}
-                fontWeight="500"
-                href={"/" + formatForLink(pageName)}
-                padding="0.5rem 1rem"
-                overflow="hidden"
-                position="relative"
-                _after={{
-                  content: `''`,
-                  height: "3px",
-                  width: 0,
-                  position: "absolute",
-                  left: "1rem",
-                  bottom: 0,
-                  bg: "gray",
-                  transition:
-                    "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
-                }}
-                _hover={{
-                  _after: {
-                    width: "50%",
-                  },
-                }}
-              >
-                {pages[pageName].title}
-              </Link>
-            </ListItem>
-          ))}
-        </List>
-      </Flex>
-      <SimpleGrid
-        columns={{
-          base: 1,
-          md: 2,
-        }}
-        paddingY={{
-          base: "3.5rem",
-          md: "12.5rem",
-        }}
-        justifyContent="space-between"
-        alignItems="center"
-        gap={{
-          base: "2.25rem",
-          md: "7.5rem",
-        }}
-      >
-        <Stack
-          paddingX={{
-            base: "1rem",
-            md: 0,
-          }}
-          order={{
+      {sections.map((section, i) => (
+        <SimpleGrid
+          columns={{
             base: 1,
-            md: 0,
+            md: 2,
           }}
+          key={section.title}
+          gap={{
+            md: "7.5rem",
+          }}
+          alignItems="center"
         >
-          <Heading as="h1">Automação e segurança eletrônica</Heading>
-          <Text>
-            Da idealização à instalação e manutenção, somos capazes de tornar
-            real todo e qualquer conceito nas áreas de engenharia e tecnologia,
-            voltadas à automação prisional, predial, industrial e segurança
-            eletronica.
-          </Text>
-        </Stack>
-        <Box
-          maxWidth={{
-            base: "50vw",
-          }}
-          padding={{
-            md: "5rem",
-          }}
-        >
-          <Image margin="auto" src="/ingenium.png" />
-        </Box>
-      </SimpleGrid>
-    </Flex>
+          <motion.div
+            viewport={{
+              margin: "50% 0px -25% 0px",
+            }}
+            initial={{
+              opacity: 0,
+              y: "33%",
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              bounce: 0.25,
+              duration: 0.5,
+            }}
+          >
+            <Image
+              src={section.imageSrc}
+              margin={{
+                base: i === 0 ? "-2.25rem 0 -5rem" : 0,
+                md: 0,
+              }}
+            />
+          </motion.div>
+          <Stack
+            padding={{
+              base: "3rem 1rem",
+              sm: "3rem 0",
+              md: 0,
+            }}
+            order={{
+              md: i % 2 === 0 ? -1 : 1,
+            }}
+          >
+            <Heading>{section.title}</Heading>
+            <Text>{section.content}</Text>
+            <Flex
+              as={Link}
+              href={section.link.href}
+              color="blue"
+              alignItems="center"
+              position="relative"
+              width="fit-content"
+              paddingY="0.5rem"
+              fontWeight="500"
+              _after={{
+                content: `''`,
+                height: "3px",
+                width: "0%",
+                position: "absolute",
+                left: 0,
+                bottom: "0",
+                background: "blue",
+                transition: "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
+              }}
+              _hover={{
+                _after: {
+                  width: "75%",
+                },
+              }}
+            >
+              {section.link.text}
+            </Flex>
+          </Stack>
+        </SimpleGrid>
+      ))}
+    </Stack>
   )
 }

@@ -23,7 +23,7 @@ export function Footer() {
       paddingTop="3.5rem"
       gridTemplateColumns={{
         base: "1fr",
-        sm: "10.5rem 1fr",
+        md: "10.5rem 1fr",
       }}
       gap="3.5rem 5rem"
       bg="#f4f4f4"
@@ -42,7 +42,7 @@ export function Footer() {
             },
             ">li": {
               _hover: {
-                color: "#000",
+                color: "blue",
               },
             },
           }}

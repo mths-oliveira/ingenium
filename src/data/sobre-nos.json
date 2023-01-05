@@ -4,37 +4,37 @@
   "sections": [
     {
       "title": "Quem somos",
-      "content": "Fundada em 2014, a Ingenium Tecnologia é uma das maiores instituições de automação prisional, predial, industrial e segurança eletronica do Brasil, participamos de grandes projetos corporativos, além de shoppings e estádios de futebol, trazemos todo know how de execução e gerenciamento de obras de grande porte.",
+      "content": "Fundada em 2014, a Ingenium Tecnologia é o maior player de automação prisional do Brasil. Além de nos destacarmos em automação predial, industrial e segurança eletrônica de alto requisito pelo nosso know how. Participamos de grandes projetos corporativos como shoppings e estádios de futebol e trazemos toda essa vivência de execução e gerenciamento de obras de grande porte.",
 
       "imageSrc": "/sobre-nos.jpg"
     },
     {
       "title": "Missão",
-      "content": "Projetar, construir, implantar e manter os sistemas de automação e segurança eletrônica mais eficientes do mundo.",
+      "content": "Projetar, construir, implantar e manter os sistemas de automação e segurança eletrônica mais eficientes do mundo. Utilizando a melhor gestão e técnica no processo, construindo relacionamento de alto nível de comprometimento com toda cadeia produtiva, garantindo segurança para nossos clientes, seu patrimônio e todas as pessoas envolvidas. Ao mesmo tempo que transformamos as vidas de nossos colaboradores, investindo sempre em seu crescimento pessoal e profissional.",
       "imageSrc": "/missao.jpg"
     },
     {
       "title": "Visão",
-      "content": "Ser líder em implantação dos maiores sistemas de automação e segurança eletrônica no Brasil, em termos de faturamento, relevância e participação de mercado.",
+      "content": "Ser líder em implantação de sistemas complexos de automação e segurança eletrônica no Brasil até 2030. Com atuação nos 4 Estados da região Sudeste, e faturamento crescendo acima de 80% ao ano.",
       "imageSrc": "/visao.jpg"
     },
     {
       "title": "Valores",
       "content": [
-        "Seja profissional e se divirta no processo.",
-        "Amor e paixão cabem em qualquer relação.",
-        "Simplicidade e humildade agregam valor a tudo e a todos.",
-        "Falhas e mudanças não só são aceitas, como são esperadas e muito bem vindas.",
-        "Uma mente de olhos e ouvidos abertos se inspira e pode inovar sempre.",
-        "Conhecimento é o que nos dá poder de realizar qualquer coisa.",
-        "Não existe distância entre liderança e companheirismo.",
-        "O bom relacionamento é a tônica da qualidade de vida e dos negócios."
+        "Aprendizado constante",
+        "Satisfação do cliente",
+        "Inovação",
+        "Desenvolvimento pessoal",
+        "Comprometimento",
+        "Honestidade",
+        "Resultados",
+        "Criatividade"
       ],
       "imageSrc": "/valores.jpg"
     },
     {
       "title": "Propósito",
-      "content": "Revolucionar o sistema prisional brasileiro, trazendo mais segurança, conforto e bem estar para todos.",
+      "content": "Cuidar das pessoas através da tecnologia.",
       "imageSrc": "/proposito.jpg"
     }
   ]

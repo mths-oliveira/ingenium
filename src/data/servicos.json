@@ -6,11 +6,11 @@
       "title": "Áreas de atuação",
       "content": [
         "Automação predial (BMS): Controle e monitoramento de Iluminação, Energia, Gás, Água, Ventilação, Exaustão e Ar condicionado.",
-        "Segurança eletrônica: CFTV, Detecção e alarme de incêndio, Controle de acesso, Alarme de intrusão e Sonorização.",
-        "TI: Switches, Roteadores, Firewall e Telefonia IP.",
-        "Elétrica: Infraestrutura, Quadros, Geradores, Nobreaks e Para raios.",
-        "Mecatrônica: Equipamentos de segurança.",
-        "Serralheria: Concertinas, cercas e alambrados."
+        "Segurança eletrônica: CFTV, controle de acesso, alarme de intrusão e sonorização.",
+        "TI: switches, roteadores, firewall e telefonia IP.",
+        "Elétrica: Infraestrutura, quadros, geradores, nobreaks e para raios.",
+        "Incêndio: Detecção, alarme, combate, aprovação de projetos, obtenção e renovação de AVCB.",
+        "Automação prisional: Desenvolvimento e integração de tecnologias para automação predial, do controle de acesso."
       ],
       "imageSrc": "/areas-de-atuaçao.jpg"
     },
@@ -31,13 +31,13 @@
     },
     {
       "title": "Manutenção",
-      "content": " Analisamos a real demanda do seu empreendimento, criamos planos de manutenção personalizados, com \"KPI`s\" definidos e rotinas, e fornecemos mão de obra qualificada para sua execução, afim de garantir a integridade e bom funcionamento da sua infraestrutura, evitando assim, a redução da vida útil da mesma e maiores prejuízos futuros.",
+      "content": "Analisamos a real demanda do seu empreendimento, criamos planos de manutenção personalizados, com \"KPI`s\" definidos e rotinas. Fornecemos mão de obra qualificada para sua execução, a fim de garantir a integridade e bom funcionamento da sua infraestrutura, evitando redução da vida útil dos equipamentos e maior eficiência. As atividades podem acontecer conforme demanda, ou recomendavelmente através de contrato contemplando visitas e relatórios periódicos, SLA de atendimento 24/7, gestão de estoque de spare parts e demais ações para garantir a sua segurança e de seu empreendimento.",
       "imageSrc": "/manutençao.jpg"
     },
     {
-      "title": "Retrofit",
-      "content": "Em sistemas já implantados, em que é necessário mais do que a penas uma reforma, mas uma reconstrução completa dos sistemas, o \"retrofit\" é o processo que avalia o que está implantado, sugere as adequações necessárias para suprir as novas necessidades do empreendimento e as executa;",
-      "imageSrc": "/retrofit.jpg"
+      "title": "Gestão de obras",
+      "content": "O grande volume de atividades e informações diárias de uma obra, desde a compra de materiais e equipamentos, gestão de equipes, acompanhamento de cronograma físico / financeiro e frentes de trabalho simultâneas e conectadas, é um grande desafio. Uma equipe preparada e experiente, com conhecimento multidisciplinar, uma metodologia testada, apoio técnico e logístico on e off site, é a diferença entre uma entrega bem feita e dentro do prazo, ou retrabalhos, atrasos e prejuízos recorrentes.",
+      "imageSrc": "/gestao-de-obras.jpg"
     }
   ]
 }

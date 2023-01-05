@@ -66,7 +66,6 @@ export default function () {
           md: "7.5rem",
         }}
         spacing={{
-          sm: "5rem",
           md: "7.5rem",
         }}
       >
@@ -134,7 +133,13 @@ export default function () {
                   }}
                 >
                   {section.content.map((content) => (
-                    <ListItem key={content} transform="translateX(1.25rem)">
+                    <ListItem
+                      key={content}
+                      transform={{
+                        base: "translateX(1rem)",
+                        sm: "translateX(1.25rem)",
+                      }}
+                    >
                       {content}
                     </ListItem>
                   ))}

@@ -20,7 +20,13 @@ export function NavBar(props: StackProps) {
               },
             }}
           >
-            <ListItem color="#000" fontSize="sm">
+            <ListItem
+              color="#000"
+              fontSize="sm"
+              _hover={{
+                color: "blue",
+              }}
+            >
               <Link href={`/${pageName}`}>
                 <Text as="h3" fontWeight="bold">
                   {page.title}
@@ -35,7 +41,7 @@ export function NavBar(props: StackProps) {
                 textOverflow="ellipsis"
                 whiteSpace="nowrap"
                 _hover={{
-                  color: "#000",
+                  color: "blue",
                 }}
               >
                 <Link
