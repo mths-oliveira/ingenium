@@ -13,7 +13,7 @@ export const theme = extendTheme({
     xl: "48px",
   },
   colors: {
-    gray: "#565859",
+    gray: "#606060",
   },
   breakpoints: {
     sm: "40em",

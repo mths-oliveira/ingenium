@@ -12,7 +12,8 @@ import {
 } from "@chakra-ui/react"
 import NextLink from "next/link"
 import { formatForLink } from "../utils/remove-accent"
-const pageNames = ["Sobre nós", "Serviços", "Produtos", "Certificações"]
+import pages from "../data"
+const pageNames = Object.keys(pages)
 export default function () {
   return (
     <Flex
@@ -59,7 +60,7 @@ export default function () {
                   },
                 }}
               >
-                {pageName}
+                {pages[pageName].title}
               </Link>
             </ListItem>
           ))}
@@ -74,10 +75,10 @@ export default function () {
           base: "3.5rem",
           md: "12.5rem",
         }}
-        justifyContent="center"
+        justifyContent="space-between"
         alignItems="center"
         gap={{
-          base: "3.5rem",
+          base: "2.25rem",
           md: "7.5rem",
         }}
       >
@@ -100,12 +101,14 @@ export default function () {
           </Text>
         </Stack>
         <Box
-          paddingX={{
-            base: "3.5rem",
-            sm: "7.5rem",
+          maxWidth={{
+            base: "50vw",
+          }}
+          padding={{
+            md: "5rem",
           }}
         >
-          <Image src="/ingenium.png" />
+          <Image margin="auto" src="/ingenium.png" />
         </Box>
       </SimpleGrid>
     </Flex>

@@ -2,7 +2,6 @@ import {
   Flex,
   Heading,
   Image,
-  Link,
   List,
   ListItem,
   SimpleGrid,
@@ -10,13 +9,11 @@ import {
   Text,
 } from "@chakra-ui/react"
 import { motion } from "framer-motion"
-import PageLink from "next/link"
 import pages from "../data"
 import { useRouter } from "next/router"
 import { formatForLink } from "../utils/remove-accent"
 
 const pageNames = Object.keys(pages)
-
 export default function () {
   const router = useRouter()
   if (
@@ -29,76 +26,19 @@ export default function () {
   return (
     <Flex flexDirection="column">
       <Flex
+        as="header"
         bgSize="cover"
-        bgPosition="top center"
         bgImage={page.imageSrc}
+        bgPosition="top center"
+        flexDirection="column"
+        justifyContent="end"
         height={{
           base: "calc(100vh - 12.5rem)",
           sm: "calc(100vh - 15rem)",
           lg: "calc(100vh - 22.5rem)",
           xl: "calc(100vh - 7.5rem)",
         }}
-        flexDirection="column"
-        justifyContent="space-between"
-        color="white"
       >
-        <Flex
-          as="header"
-          justifyContent="center"
-          bgImage="linear-gradient(to top, transparent, rgba(0,0,0,0.5))"
-          paddingY="0.5rem"
-          paddingX="7.5rem"
-          overflowX={{
-            base: "auto",
-            sm: "hidden",
-          }}
-          visibility={{
-            base: "hidden",
-            sm: "initial",
-          }}
-        >
-          <nav>
-            <List
-              display="flex"
-              overflow="hidden"
-              paddingBottom="0.5rem"
-              marginX="-1rem"
-            >
-              {page.sections.map((section) => (
-                <ListItem key={"link" + section.title}>
-                  <Link
-                    className="line-clamp"
-                    overflow="hidden"
-                    href={"#" + formatForLink(section.title)}
-                    fontSize={router.query.page === "produtos" ? "xs" : "sm"}
-                    fontWeight="500"
-                    height="fit-content"
-                    padding="0.5rem 1rem"
-                    position="relative"
-                    _after={{
-                      content: `''`,
-                      height: "3px",
-                      width: 0,
-                      position: "absolute",
-                      left: "1rem",
-                      bottom: 0,
-                      bg: "#fff",
-                      transition:
-                        "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
-                    }}
-                    _hover={{
-                      _after: {
-                        width: "50%",
-                      },
-                    }}
-                  >
-                    {section.title}
-                  </Link>
-                </ListItem>
-              ))}
-            </List>
-          </nav>
-        </Flex>
         <Stack
           padding={{
             base: "3rem 1rem",
@@ -106,10 +46,8 @@ export default function () {
             md: "3.5rem 7.5rem",
           }}
           bgImage="linear-gradient(transparent, rgba(0,0,0,0.5))"
+          color="white"
         >
-          <Link as={PageLink} fontWeight="500" width="fit-content" href="/">
-            Início
-          </Link>
           <Heading
             as="h1"
             fontSize={{
@@ -153,7 +91,7 @@ export default function () {
               }}
               initial={{
                 opacity: 0,
-                y: "25%",
+                y: "33%",
               }}
               whileInView={{
                 opacity: 1,
