@@ -63,6 +63,7 @@ export default function () {
     <Stack
       flexDirection="column"
       padding={{
+        base: "2.25rem 0 0",
         sm: "5rem",
         md: "12.5rem 7.5rem 7.5rem",
       }}
