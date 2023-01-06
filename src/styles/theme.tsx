@@ -27,6 +27,7 @@ export const theme = extendTheme({
       html: {
         scrollBehavior: "smooth",
         scrollPaddingTop: {
+          base: "2.25rem",
           sm: "5rem",
           md: "7.5rem",
         },
