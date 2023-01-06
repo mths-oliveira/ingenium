@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Heading,
+  Icon,
   Image,
   SimpleGrid,
   Stack,
@@ -29,7 +30,7 @@ const sections: Section[] = [
     title: "Ingenium Tecnologia",
     content:
       "Ingenium é um conceito. Seu significado literal remete às origens da definição de engenharia, como a ciência, a arte e a profissão de adquirir e de aplicar os conhecimentos matemáticos, técnicos e científicos na criação, aperfeiçoamento e implementação de materiais, estruturas, máquinas, aparelhos, sistemas ou processos. Ingenium é a condição que nos permite manter a mente sempre disposta a absorver todo e qualquer conhecimento em múltiplas áreas, que colaborem para o desenvolvimento de tecnologias que possam melhorar a vida humana.",
-    imageSrc: "/ingenium.jpg",
+    imageSrc: "/ingenium.png",
     link: {
       href: "/sobre-nos",
       text: "Conheça a Ingenium",
@@ -45,6 +46,16 @@ const sections: Section[] = [
       text: "Descubra como podemos ajudar a sua empresa",
     },
   },
+  {
+    title: "Produtos e soluções",
+    content:
+      "A Ingenium Tecnologia oferece todos os produtos e soluções que você precisa, para, garantir o maior nivel de segurança à sua organização.",
+    imageSrc: "/segurança.webp",
+    link: {
+      href: "/produtos",
+      text: "Conheça nossas soluções",
+    },
+  },
 ]
 
 export default function () {
@@ -52,7 +63,10 @@ export default function () {
     <Stack
       flexDirection="column"
       padding={{
-        sm: "0 5rem 2rem",
+        sm: "5rem",
+        md: "12.5rem 7.5rem 7.5rem",
+      }}
+      spacing={{
         md: "7.5rem",
       }}
     >
@@ -67,8 +81,12 @@ export default function () {
             md: "7.5rem",
           }}
           alignItems="center"
+          justifyItems="center"
         >
           <motion.div
+            style={{
+              width: i === 0 ? "62.5%" : "100%",
+            }}
             viewport={{
               margin: "50% 0px -25% 0px",
             }}
@@ -86,13 +104,7 @@ export default function () {
               duration: 0.5,
             }}
           >
-            <Image
-              src={section.imageSrc}
-              margin={{
-                base: i === 0 ? "-2.25rem 0 -5rem" : 0,
-                md: 0,
-              }}
-            />
+            <Image src={section.imageSrc} />
           </motion.div>
           <Stack
             padding={{
@@ -132,6 +144,7 @@ export default function () {
               }}
             >
               {section.link.text}
+              <Icon as={MdArrowForward} marginLeft="0.25rem" />
             </Flex>
           </Stack>
         </SimpleGrid>
