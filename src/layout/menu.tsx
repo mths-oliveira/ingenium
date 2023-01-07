@@ -10,37 +10,43 @@ import {
 import { MdMenu } from "react-icons/md"
 import { NavBar } from "../layout/navbar"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export function Menu() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const [top, setTop] = useState(0)
+  useEffect(() => {
+    const button = document.getElementById("menu-button")
+    let lastPosition = 0
+    let isScrollUp = false
+    window.onscroll = () => {
+      const { y } = document.body.getBoundingClientRect()
+      if (y === 0) {
+        setTop(-80)
+        return
+      }
+      const currentIsScrollUp = y > lastPosition
+      if (isScrollUp !== currentIsScrollUp) {
+        setTop(isScrollUp ? -80 : 0)
+        if (isScrollUp) button?.focus()
+      }
+      lastPosition = y
+      isScrollUp = currentIsScrollUp
+    }
+  }, [])
+
   return (
     <>
       <Box
-        top="0"
+        top={`${top}px`}
         zIndex="10"
-        height={{
-          base: "4rem",
-          md: "11.25rem",
-        }}
-        width={{
-          base: "100%",
-          md: "22.5rem",
-        }}
-        position={{
-          base: "sticky",
-          md: "fixed",
-        }}
-        filter="drop-shadow(0 3px 6px rgba(0,0,0,0.1))"
-        _before={{
-          content: `''`,
-          position: "absolute",
-          inset: 0,
-          bg: "white",
-          clipPath: [0, 0, "polygon(0 0, 0 100%, 100% 0)"],
-        }}
+        position="fixed"
+        width="100%"
+        background="rgba(255, 255, 255, 0.75)"
+        backdropFilter="saturate(180%) blur(20px)"
+        transition="top 500ms cubic-bezier(0.175, 0.885, 0.32, 1.075)"
       >
         <Stack
-          position="absolute"
           spacing="1rem"
           direction="row"
           alignItems="center"
@@ -51,6 +57,7 @@ export function Menu() {
           width="fit-content"
         >
           <Button
+            id="menu-button"
             onClick={onOpen}
             paddingLeft="1.5rem"
             borderRadius="0 1.5rem 1.5rem 0"
@@ -60,20 +67,13 @@ export function Menu() {
             <MdMenu fontSize="1.5rem" />
           </Button>
           <Link href="/">
-            <Image
-              src="/ingenium.png"
-              maxWidth="5rem"
-              height={{
-                base: "3rem",
-                md: "initial",
-              }}
-            />
+            <Image src="/ingenium.png" height="3rem" />
           </Link>
         </Stack>
       </Box>
       <Drawer isOpen={isOpen} onClose={onClose} placement="left">
         <DrawerOverlay />
-        <DrawerContent id="menu" maxWidth="17.5rem">
+        <DrawerContent id="menu" maxWidth="15rem">
           <DrawerHeader
             padding="1.5rem"
             borderBottom="1px solid rgba(0,0,0,0.1)"

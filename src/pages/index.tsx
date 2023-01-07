@@ -12,7 +12,6 @@ import pages from "../data"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { MdArrowForward } from "react-icons/md"
-const pageNames = Object.keys(pages)
 
 interface Link {
   text: string
@@ -30,7 +29,7 @@ const sections: Section[] = [
     title: "Ingenium Tecnologia",
     content:
       "Ingenium é um conceito. Seu significado literal remete às origens da definição de engenharia, como a ciência, a arte e a profissão de adquirir e de aplicar os conhecimentos matemáticos, técnicos e científicos na criação, aperfeiçoamento e implementação de materiais, estruturas, máquinas, aparelhos, sistemas ou processos. Ingenium é a condição que nos permite manter a mente sempre disposta a absorver todo e qualquer conhecimento em múltiplas áreas, que colaborem para o desenvolvimento de tecnologias que possam melhorar a vida humana.",
-    imageSrc: "/ingenium.png",
+    imageSrc: "/ingenium.jpg",
     link: {
       href: "/sobre-nos",
       text: "Conheça a Ingenium",
@@ -85,9 +84,6 @@ export default function () {
           justifyItems="center"
         >
           <motion.div
-            style={{
-              width: i === 0 ? "62.5%" : "100%",
-            }}
             viewport={{
               margin: "50% 0px -25% 0px",
             }}
@@ -105,7 +101,21 @@ export default function () {
               duration: 0.5,
             }}
           >
-            <Image src={section.imageSrc} />
+            <Box
+              position="relative"
+              _before={{
+                content: `''`,
+                bg: i % 2 === 0 ? "blue" : "silver",
+                width: "100%",
+                height: "calc(100% - 0.5rem)",
+                position: "absolute",
+                top: [0, "-1.25rem"],
+                left: [0, i % 2 === 0 ? "1.25rem" : "-1.25rem"],
+                zIndex: "-1",
+              }}
+            >
+              <Image src={section.imageSrc} boxShadow={["none", "xl"]} />
+            </Box>
           </motion.div>
           <Stack
             padding={{

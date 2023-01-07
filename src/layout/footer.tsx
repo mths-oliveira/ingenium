@@ -18,6 +18,7 @@ export function Footer() {
       fontSize="xs"
       paddingX={{
         base: "1rem",
+        sm: "5rem",
         md: "7.5rem",
       }}
       paddingTop="3.5rem"
