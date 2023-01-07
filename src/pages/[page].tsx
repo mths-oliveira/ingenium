@@ -1,4 +1,5 @@
 import {
+  Box,
   Flex,
   Heading,
   Image,
@@ -74,6 +75,7 @@ export default function () {
             as="section"
             id={formatForLink(section.title)}
             key={section.title}
+            alignItems="center"
             columns={{
               base: 1,
               md: 2,
@@ -82,7 +84,6 @@ export default function () {
               sm: "5rem",
               md: "7.5rem",
             }}
-            alignItems="center"
           >
             <motion.div
               viewport={{
@@ -103,9 +104,9 @@ export default function () {
               }}
             >
               <Image
+                width="100%"
                 src={section.imageSrc}
                 alt={section.title}
-                width="100%"
                 display={{
                   base: i === 0 ? "none" : "initial",
                   sm: "initial",

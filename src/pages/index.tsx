@@ -40,7 +40,7 @@ const sections: Section[] = [
     title: "Automação e segurança eletrônica",
     content:
       "Da idealização à instalação e manutenção, somos capazes de tornar real todo e qualquer conceito nas áreas de engenharia e tecnologia, voltadas à automação predial, industrial, prisional e segurança eletrônica.",
-    imageSrc: "/ajudar.jpg",
+    imageSrc: "/automacao-seguranca.jpg",
     link: {
       href: "/servicos",
       text: "Descubra como podemos ajudar a sua empresa",
@@ -50,7 +50,7 @@ const sections: Section[] = [
     title: "Produtos e soluções",
     content:
       "A Ingenium Tecnologia oferece todos os produtos e soluções que você precisa, para, garantir o maior nivel de segurança à sua organização.",
-    imageSrc: "/segurança.webp",
+    imageSrc: "/produtos-solucoes.jpg",
     link: {
       href: "/produtos",
       text: "Conheça nossas soluções",

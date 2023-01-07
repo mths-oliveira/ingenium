@@ -14,6 +14,7 @@ export const theme = extendTheme({
   },
   colors: {
     gray: "#606060",
+    silver: "#aaa",
     blue: "#065fd4",
   },
   breakpoints: {
