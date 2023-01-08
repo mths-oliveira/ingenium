@@ -57,7 +57,7 @@ export function NavBar(props: StackProps) {
               },
             }}
           >
-            <ListItem color="#000" fontWeight="bold" fontSize="sm">
+            <ListItem color="black" fontWeight="bold" fontSize="sm">
               <Link pathname={pageName}>{page.title}</Link>
             </ListItem>
             {page.sections.map((section) => (

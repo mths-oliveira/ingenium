@@ -27,7 +27,7 @@ export function Footer() {
         md: "10.5rem 1fr",
       }}
       gap="3.5rem 5rem"
-      bg="#f4f4f4"
+      bg="offWhite"
     >
       <Stack spacing="1.5rem">
         <Link href="/">

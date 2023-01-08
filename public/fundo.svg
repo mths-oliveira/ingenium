@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 433 168">
+  <defs>
+    <clipPath id="a">
+      <path data-name="Retângulo 17280" fill="#fff" stroke="#707070" d="M-1 0h433v168H-1z"/>
+    </clipPath>
+    <filter id="b" x="-18" y="-519.175" width="527.955" height="696.098" filterUnits="userSpaceOnUse">
+      <feOffset dy="5"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(1)" clip-path="url(#a)">
+    <g transform="translate(-1)" filter="url(#b)">
+      <path data-name="Caminho 25602" d="M454.633-506.149C290.067-508.466 211.169-350.973 0-350.973v504.9c211.169 0 290.068-157.491 454.633-155.175 13.1.186 25.718 0 37.322 0v-504.9c-11.603-.001-24.22.185-37.322-.001Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -13,8 +13,11 @@ export const theme = extendTheme({
     xl: "48px",
   },
   colors: {
+    white: "#fff",
+    offWhite: "#f2f2f2",
+    silver: "#c0c0c0",
     gray: "#606060",
-    silver: "#aaa",
+    black: "#1a1a1a",
     blue: "#2579e9",
   },
   breakpoints: {
@@ -40,6 +43,10 @@ export const theme = extendTheme({
       "h1, h2": {
         transform: "translateY(-0.25rem)",
       },
+      "h2, h3": {
+        color: "black",
+      },
+
       ".line-clamp": {
         overflow: "hidden",
         display: " -webkit-box",

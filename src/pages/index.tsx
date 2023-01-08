@@ -109,12 +109,20 @@ export default function () {
                 width: "100%",
                 height: "calc(100% - 0.5rem)",
                 position: "absolute",
-                top: [0, "-1.25rem"],
-                left: [0, i % 2 === 0 ? "1.25rem" : "-1.25rem"],
                 zIndex: "-1",
               }}
             >
-              <Image src={section.imageSrc} boxShadow={["none", "xl"]} />
+              <Image
+                src={section.imageSrc}
+                boxShadow={{
+                  sm: "xl",
+                }}
+                transform={{
+                  sm: `translate(${
+                    i % 2 === 0 ? "-1.25rem" : "1.25rem"
+                  }, 1.25rem)`,
+                }}
+              />
             </Box>
           </motion.div>
           <Stack
