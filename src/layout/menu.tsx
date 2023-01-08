@@ -42,7 +42,7 @@ export function Menu() {
         zIndex="10"
         position="fixed"
         width="100%"
-        background="rgba(255, 255, 255, 0.5)"
+        background="rgba(255, 255, 255, 0.75)"
         backdropFilter="saturate(180%) blur(20px)"
         transition="top 500ms cubic-bezier(0.175, 0.885, 0.32, 1.075)"
       >
