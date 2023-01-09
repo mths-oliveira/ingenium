@@ -103,33 +103,16 @@ export default function () {
                 duration: 0.5,
               }}
             >
-              <Box
-                position="relative"
-                _before={{
-                  content: `''`,
-                  bg:
-                    i % 2 === (page.title === "Serviços" ? 1 : 0)
-                      ? "blue"
-                      : "silver",
-                  width: "100%",
-                  height: "calc(100% - 0.5rem)",
-                  position: "absolute",
-                  top: [0, "-1.25rem"],
-                  left: [0, i % 2 === 0 ? "-1.25rem" : "1.25rem"],
-                  zIndex: "-1",
+              <Image
+                width="100%"
+                src={section.imageSrc}
+                alt={section.title}
+                boxShadow={["none", "xl"]}
+                display={{
+                  base: i === 0 ? "none" : "initial",
+                  sm: "initial",
                 }}
-              >
-                <Image
-                  width="100%"
-                  src={section.imageSrc}
-                  alt={section.title}
-                  boxShadow={["none", "xl"]}
-                  display={{
-                    base: i === 0 ? "none" : "initial",
-                    sm: "initial",
-                  }}
-                />
-              </Box>
+              />
             </motion.div>
             <Stack
               padding={{

@@ -80,7 +80,7 @@ export function Footer() {
               <FaLinkedin />
             </a>
           </ListItem>
-          <ListItem fontSize="1.5rem">
+          <ListItem fontSize="1.5rem" transform="translateY(-0.125rem)">
             <a target="_blank" href="mailto:contato@ingeniumtecnologia.com.br">
               <MdMailOutline />
             </a>

@@ -101,29 +101,17 @@ export default function () {
               duration: 0.5,
             }}
           >
-            <Box
-              position="relative"
-              _before={{
-                content: `''`,
-                bg: i % 2 === 0 ? "blue" : "silver",
-                width: "100%",
-                height: "calc(100% - 0.5rem)",
-                position: "absolute",
-                zIndex: "-1",
+            <Image
+              src={section.imageSrc}
+              boxShadow={{
+                sm: "xl",
               }}
-            >
-              <Image
-                src={section.imageSrc}
-                boxShadow={{
-                  sm: "xl",
-                }}
-                transform={{
-                  sm: `translate(${
-                    i % 2 === 0 ? "-1.25rem" : "1.25rem"
-                  }, 1.25rem)`,
-                }}
-              />
-            </Box>
+              transform={{
+                sm: `translate(${
+                  i % 2 === 0 ? "-1.25rem" : "1.25rem"
+                }, 1.25rem)`,
+              }}
+            />
           </motion.div>
           <Stack
             padding={{
