@@ -15,7 +15,7 @@ export const theme = extendTheme({
   colors: {
     white: "#fff",
     offWhite: "#f2f2f2",
-    silver: "#c0c0c0",
+    silver: "#aaa",
     gray: "#606060",
     black: "#1a1a1a",
     blue: "#2579e9",

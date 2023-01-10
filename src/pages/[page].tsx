@@ -63,6 +63,7 @@ export default function () {
       <Stack
         as="main"
         padding={{
+          base: "3rem 0 0",
           sm: "5rem",
           md: "7.5rem",
         }}
@@ -108,10 +109,6 @@ export default function () {
                 src={section.imageSrc}
                 alt={section.title}
                 boxShadow={["none", "xl"]}
-                display={{
-                  base: i === 0 ? "none" : "initial",
-                  sm: "initial",
-                }}
               />
             </motion.div>
             <Stack
