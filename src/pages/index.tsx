@@ -106,11 +106,7 @@ export default function () {
               boxShadow={{
                 sm: "xl",
               }}
-              transform={{
-                sm: `translate(${
-                  i % 2 === 0 ? "-1.25rem" : "1.25rem"
-                }, 1.25rem)`,
-              }}
+             
             />
           </motion.div>
           <Stack
