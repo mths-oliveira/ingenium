@@ -1,5 +1,4 @@
 import {
-  Box,
   Flex,
   Heading,
   Icon,
@@ -8,7 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react"
-import pages from "../data"
+import Head from "next/head"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { MdArrowForward } from "react-icons/md"
@@ -24,7 +23,7 @@ interface Section {
   imageSrc: string
   link: Link
 }
-const sections: Section[] = [
+export const sections: Section[] = [
   {
     title: "Ingenium Tecnologia",
     content:
@@ -59,99 +58,104 @@ const sections: Section[] = [
 
 export default function () {
   return (
-    <Stack
-      flexDirection="column"
-      padding={{
-        base: "2.25rem 0 0",
-        sm: "5rem",
-        md: "12.5rem 7.5rem 7.5rem",
-      }}
-      spacing={{
-        md: "7.5rem",
-      }}
-    >
-      {sections.map((section, i) => (
-        <SimpleGrid
-          columns={{
-            base: 1,
-            md: 2,
-          }}
-          key={section.title}
-          gap={{
-            md: "7.5rem",
-          }}
-          alignItems="center"
-          justifyItems="center"
-        >
-          <motion.div
-            viewport={{
-              margin: "50% 0px -25% 0px",
+    <>
+      <Head>
+        <title>Ingenium Tecnologia</title>
+      </Head>
+      <Stack
+        flexDirection="column"
+        padding={{
+          base: "2.25rem 0 0",
+          sm: "5rem",
+          md: "12.5rem 7.5rem 7.5rem",
+        }}
+        spacing={{
+          md: "7.5rem",
+        }}
+      >
+        {sections.map((section, i) => (
+          <SimpleGrid
+            columns={{
+              base: 1,
+              md: 2,
             }}
-            initial={{
-              opacity: 0,
-              y: "33%",
+            key={section.title}
+            gap={{
+              md: "7.5rem",
             }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              type: "spring",
-              bounce: 0.25,
-              duration: 0.5,
-            }}
+            alignItems="center"
+            justifyItems="center"
           >
-            <Image
-              src={section.imageSrc}
-              boxShadow={{
-                sm: "xl",
+            <motion.div
+              viewport={{
+                margin: "50% 0px -25% 0px",
               }}
-             
-            />
-          </motion.div>
-          <Stack
-            padding={{
-              base: "3rem 1rem",
-              sm: "3rem 0",
-              md: 0,
-            }}
-            order={{
-              md: i % 2 === 0 ? -1 : 1,
-            }}
-          >
-            <Heading>{section.title}</Heading>
-            <Text>{section.content}</Text>
-            <Flex
-              as={Link}
-              href={section.link.href}
-              color="blue"
-              alignItems="center"
-              position="relative"
-              width="fit-content"
-              paddingY="0.5rem"
-              fontWeight="500"
-              _after={{
-                content: `''`,
-                height: "3px",
-                width: "0%",
-                position: "absolute",
-                left: 0,
-                bottom: "0",
-                background: "blue",
-                transition: "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
+              initial={{
+                opacity: 0,
+                y: "33%",
               }}
-              _hover={{
-                _after: {
-                  width: "75%",
-                },
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                bounce: 0.25,
+                duration: 0.5,
               }}
             >
-              {section.link.text}
-              <Icon as={MdArrowForward} marginLeft="0.25rem" />
-            </Flex>
-          </Stack>
-        </SimpleGrid>
-      ))}
-    </Stack>
+              <Image
+                src={section.imageSrc}
+                boxShadow={{
+                  sm: "xl",
+                }}
+              />
+            </motion.div>
+            <Stack
+              padding={{
+                base: "3rem 1rem",
+                sm: "3rem 0",
+                md: 0,
+              }}
+              order={{
+                md: i % 2 === 0 ? -1 : 1,
+              }}
+            >
+              <Heading as={i === 0 ? "h1" : "h2"}>{section.title}</Heading>
+              <Text>{section.content}</Text>
+              <Flex
+                as={Link}
+                href={section.link.href}
+                color="blue"
+                alignItems="center"
+                position="relative"
+                width="fit-content"
+                paddingY="0.5rem"
+                fontWeight="500"
+                _after={{
+                  content: `''`,
+                  height: "3px",
+                  width: "0%",
+                  position: "absolute",
+                  left: 0,
+                  bottom: "0",
+                  background: "blue",
+                  transition:
+                    "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
+                }}
+                _hover={{
+                  _after: {
+                    width: "75%",
+                  },
+                }}
+              >
+                {section.link.text}
+                <Icon as={MdArrowForward} marginLeft="0.25rem" />
+              </Flex>
+            </Stack>
+          </SimpleGrid>
+        ))}
+      </Stack>
+    </>
   )
 }
