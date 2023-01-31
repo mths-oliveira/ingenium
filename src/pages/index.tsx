@@ -121,7 +121,9 @@ export default function () {
                 md: i % 2 === 0 ? -1 : 1,
               }}
             >
-              <Heading as={i === 0 ? "h1" : "h2"}>{section.title}</Heading>
+              <Heading as={i === 0 ? "h1" : "h2"} color="black">
+                {section.title}
+              </Heading>
               <Text>{section.content}</Text>
               <Flex
                 as={Link}
