@@ -3,11 +3,6 @@
   "imageSrc": "/produtos.jpg",
   "sections": [
     {
-      "title": "Software de automação e gestão predial",
-      "content": "Sistema de gestão do tipo BMS (Building Management System), aplicável em ambiente prisional, industrial e predial. Sendo possível agregar abertura e fechamento de portas, sistema de controle de acesso, acionamento e desligamento de cargas elétricas, gestão de equipamentos, medição de consumo de energia, água e HVAC. A interface é extremamente amigável, com possibilidade de controle via sistema eletromecânico (botoeiras), computador, tela touchscreen, smartphone e tablets. Com uma vasta gama de possibilidades de retirada de relatórios, permite um controle fino sobre todos os sistemas.",
-      "imageSrc": "/software-de-automaçao.jpg"
-    },
-    {
       "title": "Portas automáticas para celas",
       "content": "Dispositivo desenvolvido especificamente para aplicação em ambiente prisional, para fechamento de celas. É um dos ambientes mais inóspitos e sujeitos a vandalismo possível. O mecanismo foi pensado para ser submetido a todo tipo de tentativa de violação possível dentro do ambiente, que fica 24 horas a mercê. Com sistema de abertura automático e possibilidade de redundância manual, travas por solenóide de tração e trancas redundantes, é o sistema ideal para essa aplicação. Podem ser construídas tanto em grade quanto em chapa de aço.",
       "imageSrc": "/portas-automaticas-para-celas.jpg"

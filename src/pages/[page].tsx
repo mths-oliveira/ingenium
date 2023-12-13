@@ -128,7 +128,7 @@ export default function () {
                   md: 0,
                 }}
                 order={{
-                  md: i % 2 === 0 ? 1 : -1,
+                  md: i % 2 === 0 ? -1 : 1,
                 }}
               >
                 <Heading>{section.title}</Heading>

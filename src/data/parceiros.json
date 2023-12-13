@@ -1,0 +1,21 @@
+{
+  "title": "Parceiros",
+  "imageSrc": "/parceiros-capa.jpeg",
+  "sections": [
+    {
+      "title": "Parceiro A",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe sed quod temporibus animi quos accusamus adipisci assumenda. Magnam eos numquam obcaecati doloribus. Laboriosam impedit doloremque, delectus et autem quod.      ",
+      "imageSrc": "/parceiros.jpg"
+    },
+    {
+      "title": "Parceiro B",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe sed quod temporibus animi quos accusamus adipisci assumenda. Magnam eos numquam obcaecati doloribus. Laboriosam impedit doloremque, delectus et autem quod.      ",
+      "imageSrc": "/parceiros.jpg"
+    },
+    {
+      "title": "Parceiro C",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe sed quod temporibus animi quos accusamus adipisci assumenda. Magnam eos numquam obcaecati doloribus. Laboriosam impedit doloremque, delectus et autem quod.      ",
+      "imageSrc": "/parceiros.jpg"
+    }
+  ]
+}

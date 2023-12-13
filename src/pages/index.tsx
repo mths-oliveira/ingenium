@@ -11,50 +11,12 @@ import Head from "next/head"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { MdArrowForward } from "react-icons/md"
+import data from "../data/home.json"
 
 interface Link {
   text: string
   href: string
 }
-
-interface Section {
-  title: string
-  content: string
-  imageSrc: string
-  link: Link
-}
-export const sections: Section[] = [
-  {
-    title: "Ingenium Tecnologia",
-    content:
-      "Ingenium é um conceito. Seu significado literal remete às origens da definição de engenharia, como a ciência, a arte e a profissão de adquirir e de aplicar os conhecimentos matemáticos, técnicos e científicos na criação, aperfeiçoamento e implementação de materiais, estruturas, máquinas, aparelhos, sistemas ou processos. Ingenium é a condição que nos permite manter a mente sempre disposta a absorver todo e qualquer conhecimento em múltiplas áreas, que colaborem para o desenvolvimento de tecnologias que possam melhorar a vida humana.",
-    imageSrc: "/ingenium.jpg",
-    link: {
-      href: "/sobre-nos",
-      text: "Conheça a Ingenium",
-    },
-  },
-  {
-    title: "Automação e segurança eletrônica",
-    content:
-      "Da idealização à instalação e manutenção, somos capazes de tornar real todo e qualquer conceito nas áreas de engenharia e tecnologia, voltadas à automação predial, industrial, prisional e segurança eletrônica.",
-    imageSrc: "/automacao-seguranca.jpg",
-    link: {
-      href: "/servicos",
-      text: "Descubra como podemos ajudar a sua empresa",
-    },
-  },
-  {
-    title: "Produtos e soluções",
-    content:
-      "A Ingenium Tecnologia oferece todos os produtos e soluções que você precisa, para, garantir o maior nivel de segurança à sua organização.",
-    imageSrc: "/produtos-solucoes.jpg",
-    link: {
-      href: "/produtos",
-      text: "Conheça nossas soluções",
-    },
-  },
-]
 
 export default function () {
   return (
@@ -62,18 +24,49 @@ export default function () {
       <Head>
         <title>Ingenium Tecnologia</title>
       </Head>
+      <Flex
+        as="header"
+        bgSize="cover"
+        bgImage={data.imageSrc}
+        bgPosition="top center"
+        height="100VH"
+      >
+        <Flex
+          bgImage="linear-gradient(to right, rgba(0,0,0,0.5) 50%, transparent)"
+          height="100%"
+          width="100%"
+          alignItems="center"
+          padding={{
+            base: "3rem 1rem",
+            sm: "3.5rem 5rem",
+            md: "3.5rem 7.5rem",
+          }}
+        >
+          <Heading
+            as="h1"
+            color="white"
+            width="50%"
+            fontSize={{
+              base: "lg",
+              md: "xl",
+            }}
+          >
+            {data.title}
+          </Heading>
+        </Flex>
+      </Flex>
       <Stack
         flexDirection="column"
         padding={{
           base: "2.25rem 0 0",
           sm: "5rem",
-          md: "12.5rem 7.5rem 7.5rem",
+          md: "7.5rem",
         }}
         spacing={{
           md: "7.5rem",
         }}
       >
-        {sections.map((section, i) => (
+        {data.sections.map((section, i) => (
           <SimpleGrid
             columns={{
               base: 1,

@@ -61,7 +61,7 @@ export function NavBar(props: StackProps) {
               <Link pathname={pageName}>{page.title}</Link>
             </ListItem>
             {page.sections.map((section) => (
-              <ListItem key={section.title}>
+              <ListItem key={section.title} maxWidth="17rem">
                 <Link pathname={pageName} hash={formatForLink(section.title)}>
                   {section.title}
                 </Link>
