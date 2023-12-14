@@ -74,7 +74,7 @@ export default function () {
             const { bottom } = hero.getBoundingClientRect()
             window.scrollBy({ top: bottom, behavior: "smooth" })
           }}
-          animation="1s ease-in-out infinite alternate slidein"
+          animation="1s ease-in infinite alternate slidein"
         >
           <Text fontSize="12px" marginBottom="0.5rem">
             Desça para saber mais
