@@ -53,6 +53,14 @@ export const theme = extendTheme({
         WebkitLineClamp: 3,
         WebkitBoxOrient: "vertical",
       },
+      "@keyframes slidein": {
+        from: {
+          transform: "translate(-50%, -1rem)",
+        },
+        to: {
+          transform: "translate(-50%, 0)",
+        },
+      },
     },
   },
 })

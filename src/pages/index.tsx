@@ -1,4 +1,5 @@
 import {
+  Box,
   Flex,
   Heading,
   Icon,
@@ -10,8 +11,9 @@ import {
 import Head from "next/head"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { MdArrowForward } from "react-icons/md"
+import { MdArrowDownward, MdArrowForward, MdFingerprint } from "react-icons/md"
 import data from "../data/home.json"
+import Player from "../components/player"
 
 interface Link {
   text: string
@@ -25,36 +27,129 @@ export default function () {
         <title>Ingenium Tecnologia</title>
       </Head>
       <Flex
+        id="hero"
         as="header"
         bgSize="cover"
         bgImage={data.imageSrc}
-        bgPosition="top center"
-        height="100VH"
+        bgPosition="0% 75%"
+        height="100vh"
+        position="relative"
+        color="white"
+        padding={{
+          base: "3rem 1rem",
+          sm: "3.5rem 5rem",
+          md: "3.5rem 7.5rem",
+        }}
+        _before={{
+          content: `''`,
+          position: "absolute",
+          top: "0",
+          left: "0",
+          width: "100%",
+          height: "100vh",
+          bgImage:
+            "linear-gradient(to right, rgba(0,0,0,0.5) 50%, transparent)",
+        }}
       >
-        <Flex
-          bgImage="linear-gradient(to right, rgba(0,0,0,0.5) 50%, transparent)"
-          height="100%"
-          width="100%"
-          alignItems="center"
-          padding={{
-            base: "3rem 1rem",
-            sm: "3.5rem 5rem",
-            md: "3.5rem 7.5rem",
+        <Heading
+          alignSelf="center"
+          as="h1"
+          width="50%"
+          fontSize={{
+            base: "lg",
+            md: "xl",
           }}
         >
-          <Heading
-            as="h1"
-            color="white"
-            width="50%"
-            fontSize={{
-              base: "lg",
-              md: "xl",
-            }}
-          >
-            {data.title}
-          </Heading>
+          {data.title}
+        </Heading>
+        <Flex
+          position="absolute"
+          bottom="0.5rem"
+          left="50%"
+          alignItems="center"
+          cursor="pointer"
+          flexDirection="column"
+          onClick={() => {
+            const hero = document.getElementById("hero")
+            const { bottom } = hero.getBoundingClientRect()
+            window.scrollBy({ top: bottom, behavior: "smooth" })
+          }}
+          animation="1s ease-in-out infinite alternate slidein"
+        >
+          <Text fontSize="12px" marginBottom="0.5rem">
+            Desça para saber mais
+          </Text>
+          <Icon as={MdArrowDownward} />
         </Flex>
       </Flex>
+      <Flex
+        flexDirection="column"
+        alignItems="center"
+        position="relative"
+        _before={{
+          content: `''`,
+          position: "absolute",
+          top: "0",
+          left: "0",
+          width: "100%",
+          zIndex: "-1",
+          height: "calc(100% - 7.5rem)",
+          bg: "offWhite",
+        }}
+      >
+        <Stack
+          spacing="1.25rem"
+          maxWidth="53rem"
+          padding="5rem 6.25rem 2.25rem"
+          textAlign="center"
+          alignSelf="center"
+        >
+          <Heading maxWidth="37.5rem">
+            Software de automação e gestão prisional
+          </Heading>
+          <Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            cupiditate sunt dolor optio voluptatum voluptate debitis nam
+            dignissimos harum ut molestiae quibusdam libero iste, autem quia
+            atque ab repellat veritatis.
+          </Text>
+        </Stack>
+        <Flex position="relative" justifyContent="center">
+          <Stack direction="row" spacing="1rem">
+            {[0, 0, 0, 0].map(() => (
+              <Flex
+                flexDirection="column"
+                height="17.5rem"
+                width="12.5rem"
+                borderRadius="5px"
+                boxShadow="xl"
+                bg="white"
+                padding="1rem"
+              >
+                <Box marginBottom="0.5rem" height="140px">
+                  <Box
+                    bg="blue"
+                    padding="0.5rem"
+                    borderRadius="full"
+                    height="4.5rem"
+                    width="4.5rem"
+                    marginBottom="0.5rem"
+                  >
+                    <Icon color="white" fontSize="3.5rem" as={MdFingerprint} />
+                  </Box>
+                  <Text color="black" fontSize="md" fontWeight="semibold">
+                    Lorem ipsum dolor
+                  </Text>
+                </Box>
+                <Text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </Text>
+              </Flex>
+            ))}
+          </Stack>
+        </Flex>
+      </Flex>
+      <Player />
       <Stack
         flexDirection="column"
         padding={{

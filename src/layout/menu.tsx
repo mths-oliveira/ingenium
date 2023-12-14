@@ -14,7 +14,7 @@ import { useEffect, useState } from "react"
 
 export function Menu() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [top, setTop] = useState(0)
+  const [top, setTop] = useState(-80)
   useEffect(() => {
     const button = document.getElementById("menu-button")
     let lastPosition = 0
