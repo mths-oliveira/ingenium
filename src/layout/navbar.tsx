@@ -60,6 +60,18 @@ export function NavBar(props: StackProps) {
             <ListItem color="black" fontWeight="bold" fontSize="sm">
               <Link pathname={pageName}>{page.title}</Link>
             </ListItem>
+            {pageName === "solucoes" && (
+              <ListItem key={"sdaegp"} maxWidth="17rem">
+                <Link
+                  pathname={pageName}
+                  hash={formatForLink(
+                    "Software de automação e gestão prisional"
+                  )}
+                >
+                  Software de automação e gestão prisional
+                </Link>
+              </ListItem>
+            )}
             {page.sections.map((section) => (
               <ListItem key={section.title} maxWidth="17rem">
                 <Link pathname={pageName} hash={formatForLink(section.title)}>

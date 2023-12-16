@@ -1,5 +1,4 @@
 {
-  "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
   "imageSrc": "/test.jpeg",
   "sections": [
     {
@@ -31,7 +30,7 @@
     },
     {
       "title": "Parceiros e Fornecedores",
-      "content": "A Ingenium é formada por um grupo multidisciplinar, composto por colaboradores, parceiros e fornecedores. Que juntos, constituem uma extensa e complexa cadeia de relações.",
+      "content": "A Ingenium é formada por um grupo multidisciplinar, composto por colaboradores, parceiros e fornecedores. Que juntos, constituem uma extensa e complexa cadeia de relações. O que garante a interdisciplinaridade necessária para lidar com tranquilidade e segurança com todo tipo de desafio que possa surgir durante a execução de qualquer um de nossos projetos",
       "imageSrc": "parceiros.jpg",
       "link": {
         "href": "/parceiros",

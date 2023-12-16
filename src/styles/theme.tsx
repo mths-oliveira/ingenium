@@ -46,7 +46,12 @@ export const theme = extendTheme({
       "h2, h3": {
         color: "black",
       },
-
+      ".slider": {
+        scrollBehavior: "auto",
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+      },
       ".line-clamp": {
         overflow: "hidden",
         display: " -webkit-box",

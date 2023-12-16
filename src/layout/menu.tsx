@@ -14,7 +14,7 @@ import { useEffect, useState } from "react"
 
 export function Menu() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [top, setTop] = useState(-80)
+  const [top, setTop] = useState(0)
   useEffect(() => {
     const button = document.getElementById("menu-button")
     let lastPosition = 0
@@ -67,7 +67,7 @@ export function Menu() {
             <MdMenu fontSize="1.5rem" />
           </Button>
           <Link href="/">
-            <Image src="/ingenium.png" height="3rem" />
+            <Image src="/ingenium.jpeg" height="3rem" />
           </Link>
         </Stack>
       </Box>

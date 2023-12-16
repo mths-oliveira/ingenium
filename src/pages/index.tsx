@@ -51,17 +51,22 @@ export default function () {
             "linear-gradient(to right, rgba(0,0,0,0.5) 50%, transparent)",
         }}
       >
-        <Heading
-          alignSelf="center"
-          as="h1"
-          width="50%"
-          fontSize={{
-            base: "lg",
-            md: "xl",
-          }}
-        >
-          {data.title}
-        </Heading>
+        <Stack zIndex="1" justifyContent="center" color="white" spacing="1rem">
+          <Heading
+            maxWidth="40rem"
+            as="h1"
+            fontSize={{
+              base: "lg",
+              md: "xl",
+            }}
+          >
+            Automação e Tecnologia para o Sistema Prisional
+          </Heading>
+          <Text as="span" maxWidth="35rem" fontWeight="500">
+            Nossas soluções proporcionam gestão, controle, segurança e conforto
+            na operação diária de unidades prisionais.
+          </Text>
+        </Stack>
         <Flex
           position="absolute"
           bottom="0.5rem"
@@ -108,10 +113,11 @@ export default function () {
             Software de automação e gestão prisional
           </Heading>
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            cupiditate sunt dolor optio voluptatum voluptate debitis nam
-            dignissimos harum ut molestiae quibusdam libero iste, autem quia
-            atque ab repellat veritatis.
+            OmniSafe representa uma revolução na gestão prisional, oferecendo
+            uma solução integrada e abrangente para unidades prisionais
+            modernas. Nosso sistema vai além das expectativas, proporcionando
+            segurança total, eficiência operacional e contribuindo ativamente
+            para o processo de ressocialização.
           </Text>
         </Stack>
         <Flex position="relative" justifyContent="center">

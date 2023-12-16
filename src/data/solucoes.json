@@ -1,0 +1,29 @@
+{
+  "imageSrc": "soluçoes.jpeg",
+  "title": "Soluções",
+  "sections": [
+    {
+      "title": "Gestão operacional",
+      "content": "Controle de todas as atividades diárias, incluindo movimentações internas, visitantes, e logística de veículos. Geração de relatórios online e periódicos para análise detalhada.",
+      "imageSrc": "/areas-de-atuaçao.jpg"
+    },
+    {
+      "title": "Benefícios",
+      "content": [
+        "Segurança Aprimorada: OmniSafe oferece uma abordagem holística para a segurança, garantindo que todas as áreas da unidade prisional sejam cobertas, prevenindo incidentes e facilitando respostas rápidas.",
+        "Eficiência Operacional: A automação inteligente e a integração de tecnologias otimizam as operações diárias, reduzindo custos operacionais e proporcionando uma gestão mais eficiente.",
+        "Ressocialização Eficaz: A sensação de liberdade para os presos, aliada a atividades educacionais e profissionais, contribui para o processo de ressocialização, promovendo uma transição mais suave para a sociedade.",
+
+        "Segurança e bem-estar dos Servidores Públicos: Ao reduzir a necessidade de escoltas constantes, OmniSafe cria um ambiente mais seguro para os servidores públicos, melhorando significativamente suas condições de trabalho.",
+        "Redução de conflitos A diminuição da necessidade de contato fisico constante durante as movimentações diárias contribui significativamente  para redução dos indices de violência verbal e fisica"
+      ],
+      "imageSrc": "/areas-de-atuaçao.jpg"
+    },
+
+    {
+      "title": "O futuro da gestão prisional",
+      "content": "OmniSafe não é apenas um sistema, mas uma visão do futuro da gestão prisional. Ao unir tecnologia, segurança e ressocialização, estamos moldando um ambiente onde a reabilitação das pessoas passa a ser o ponto focal e objetivo máximo, uma vez que questões como segurança e o alto volume de procedimentos diários são facilitados, registrados e geridos adequadamente",
+      "imageSrc": "/areas-de-atuaçao.jpg"
+    }
+  ]
+}
