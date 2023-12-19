@@ -133,8 +133,14 @@ export default function () {
                   boxShadow="xl"
                   bg="white"
                   padding="1rem"
+                  textAlign="center"
                 >
-                  <Box marginBottom="0.75rem" height="140px">
+                  <Flex
+                    flexDirection="column"
+                    alignItems="center"
+                    marginBottom="0.75rem"
+                    height="140px"
+                  >
                     <Box
                       bg="blue"
                       padding="1rem"
@@ -153,7 +159,7 @@ export default function () {
                     >
                       {title}
                     </Text>
-                  </Box>
+                  </Flex>
                   <Text fontSize="14px">{text}</Text>
                 </Flex>
               ))}
@@ -169,86 +175,20 @@ export default function () {
             md: "7.5rem",
           }}
           spacing={{
-            md: "7.5rem",
+            md: "5rem",
           }}
         >
-          {page.sections.map((section, i) => (
-            <SimpleGrid
-              as="section"
-              id={formatForLink(section.title)}
-              key={section.title}
-              alignItems="center"
-              columns={{
-                base: 1,
-                md: 2,
-              }}
-              columnGap={{
-                sm: "5rem",
-                md: "7.5rem",
+          {page.sections.map((section) => (
+            <Stack
+              padding={{
+                base: "3rem 1rem",
+                sm: "3rem 0",
+                md: 0,
               }}
             >
-              <motion.div
-                viewport={{
-                  margin: "50% 0px -25% 0px",
-                }}
-                initial={{
-                  opacity: 0,
-                  y: "33%",
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  type: "spring",
-                  bounce: 0.25,
-                  duration: 0.5,
-                }}
-              >
-                <Image
-                  width="100%"
-                  src={section.imageSrc}
-                  alt={section.title}
-                  boxShadow={["none", "xl"]}
-                />
-              </motion.div>
-              <Stack
-                padding={{
-                  base: "3rem 1rem",
-                  sm: "3.5rem 0",
-                  md: 0,
-                }}
-                order={{
-                  md: i % 2 === 0 ? -1 : 1,
-                }}
-              >
-                <Heading>{section.title}</Heading>
-                {Array.isArray(section.content) ? (
-                  <List
-                    listStyleType="initial"
-                    sx={{
-                      ">li:not(:first-of-type)": {
-                        marginTop: "0.5rem",
-                      },
-                    }}
-                  >
-                    {section.content.map((content) => (
-                      <ListItem
-                        key={content}
-                        transform={{
-                          base: "translateX(1rem)",
-                          sm: "translateX(1.25rem)",
-                        }}
-                      >
-                        {content}
-                      </ListItem>
-                    ))}
-                  </List>
-                ) : (
-                  <Text>{section.content}</Text>
-                )}
-              </Stack>
-            </SimpleGrid>
+              <Heading>{section.title}</Heading>
+              <Text>{section.content}</Text>
+            </Stack>
           ))}
         </Stack>
         <Player />
