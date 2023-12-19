@@ -2,8 +2,8 @@ import NextLink from "next/link"
 import {
   List,
   ListItem,
-  Stack,
-  StackProps,
+  SimpleGrid,
+  SimpleGridProps,
   Text,
   TextProps,
 } from "@chakra-ui/react"
@@ -43,9 +43,9 @@ function Link({ hash, pathname, href, ...rest }: LinkProps) {
   )
 }
 
-export function NavBar(props: StackProps) {
+export function NavBar(props: SimpleGridProps) {
   return (
-    <Stack as="nav" {...props} width="100%" overflow="hidden">
+    <SimpleGrid as="nav" {...props} width="100%" overflow="hidden">
       {Object.keys(pages).map((pageName) => {
         const page = pages[pageName]
         return (
@@ -82,6 +82,6 @@ export function NavBar(props: StackProps) {
           </List>
         )
       })}
-    </Stack>
+    </SimpleGrid>
   )
 }

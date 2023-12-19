@@ -105,8 +105,8 @@ export default function () {
           />
           <Stack
             spacing="1.25rem"
-            maxWidth="53rem"
-            padding="5rem 6.25rem 2.25rem"
+            maxWidth="57rem"
+            padding="5rem 6.5rem 2.25rem"
             textAlign="center"
             alignSelf="center"
           >

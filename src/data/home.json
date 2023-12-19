@@ -4,7 +4,7 @@
     {
       "title": "Ingenium Tecnologia",
       "content": "Ingenium é um conceito. Seu significado literal remete às origens da definição de engenharia, como a ciência, a arte e a profissão de adquirir e de aplicar os conhecimentos matemáticos, técnicos e científicos na criação, aperfeiçoamento e implementação de materiais, estruturas, máquinas, aparelhos, sistemas ou processos. Ingenium é a condição que nos permite manter a mente sempre disposta a absorver todo e qualquer conhecimento em múltiplas áreas, que colaborem para o desenvolvimento de tecnologias que possam melhorar a vida humana.",
-      "imageSrc": "/ingenium.jpg",
+      "imageSrc": "/ingenium-paisagem.jpg",
       "link": {
         "href": "/sobre-nos",
         "text": "Conheça a Ingenium"
@@ -20,12 +20,12 @@
       }
     },
     {
-      "title": "Produtos e soluções",
+      "title": "Produtos",
       "content": "A Ingenium Tecnologia oferece todos os produtos e soluções que você precisa, para, garantir o maior nivel de segurança à sua organização.",
       "imageSrc": "/produtos-solucoes.jpg",
       "link": {
         "href": "/produtos",
-        "text": "Conheça nossas soluções"
+        "text": "Conheça nossos produtos"
       }
     },
     {

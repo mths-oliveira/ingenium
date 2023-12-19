@@ -42,8 +42,7 @@ export function Menu() {
         zIndex="10"
         position="fixed"
         width="100%"
-        background="rgba(255, 255, 255, 0.75)"
-        backdropFilter="saturate(180%) blur(20px)"
+        background="#fff"
         transition="top 200ms ease-in-out"
       >
         <Stack
@@ -67,7 +66,7 @@ export function Menu() {
             <MdMenu fontSize="1.5rem" />
           </Button>
           <Link href="/">
-            <Image src="/ingenium.jpeg" height="3rem" />
+            <Image src="/ingenium.png" height="3rem" />
           </Link>
         </Stack>
       </Box>
@@ -81,7 +80,7 @@ export function Menu() {
             <DrawerCloseButton width="2.25rem" height="2.25rem" />
             <Box width="fit-content">
               <Link href="/">
-                <Image src="/ingenium.png" width="5rem" onClick={onClose} />
+                <Image src="/ingenium.png" width="3.5rem" onClick={onClose} />
               </Link>
             </Box>
           </DrawerHeader>

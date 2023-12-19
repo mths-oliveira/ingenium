@@ -1,27 +1,28 @@
 {
   "title": "Serviços",
-  "imageSrc": "/serviços.jpg",
+  "imageSrc": "/serviços.jpeg",
   "sections": [
     {
       "title": "Áreas de atuação",
       "content": [
         "Automação predial (BMS): Controle e monitoramento de Iluminação, Energia, Gás, Água, Ventilação, Exaustão e Ar condicionado.",
+        "Automação de portas: Desenvolvimento e integração de tecnologias para automação de controle de acesso antivandalismo.",
+        "Software: Desenvolvimento de soluções integradas para controle e gestão prisional.",
         "Segurança eletrônica: CFTV, controle de acesso, alarme de intrusão e sonorização.",
         "TI: switches, roteadores, firewall e telefonia IP.",
         "Elétrica: Infraestrutura, quadros, geradores, nobreaks e para raios.",
-        "Incêndio: Detecção, alarme, combate, aprovação de projetos, obtenção e renovação de AVCB.",
-        "Automação prisional: Desenvolvimento e integração de tecnologias para automação predial, do controle de acesso."
+        "Incêndio: Detecção, alarme, combate, aprovação de projetos, obtenção e renovação de AVCB."
       ],
       "imageSrc": "/areas-de-atuaçao.jpg"
     },
     {
       "title": "Consultoria",
-      "content": "Independente do seu sistema já existir ou for apenas uma idéia, colocaremos à sua disposição nosso time de engenharia, que irá orientá-lo quanto as reais necessidades da sua aplicação. Indicando os melhores equipamentos do mercado, com o melhor custo-benefício, que sejam os mais adequados para tornar seu empreendimento referência em termos de tecnologia e segurança.",
+      "content": "Colocaremos à sua disposição nosso time de engenharia e tecnologia, que irá orientá-lo quanto as reais necessidades da sua aplicação. Indicando os melhores equipamentos do mercado, com o melhor custo-benefício, que sejam os mais adequados para tornar seu empreendimento referência em termos de tecnologia e segurança. Reduzindo custos, otimizando insumos e gerando os melhores resultados possíveis. Toda nossa experiência em tecnologia dedicada ao sistema prisional, com todas suas nuances e especificidades, estarão disponíveis para auxiliar da melhor forma na realização dos projetos de nossos clientes, superando sempre suas expectativas.",
       "imageSrc": "/consultoria.jpg"
     },
     {
       "title": "Projetos",
-      "content": "Desenvolvemos projetos em plataforma BIM ou CAD, em todas nossas áreas de atuação. Desde projetos conceituais e básicos, a projetos executivos com toda documentação complementar inclusa: memoriais descritivos, listas de materiais, diagramas e afins.",
+      "content": "Gerenciamos e desenvolvemos projetos em plataforma BIM ou CAD, em todas nossas áreas de atuação. Desde projetos conceituais e básicos, a projetos executivos com toda documentação complementar inclusa: memoriais descritivos, listas de materiais, diagramas e afins. Seguindo a risca as orientações dos Manuais de Escopo de Projetos para atendimento da ABNT NBR 15575:2013",
       "imageSrc": "/projetos.webp"
     },
     {

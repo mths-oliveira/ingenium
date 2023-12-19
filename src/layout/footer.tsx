@@ -88,14 +88,12 @@ export function Footer() {
         </List>
       </Stack>
       <NavBar
+        columns={[1, 2, 3]}
         spacing={{
           base: "2.25rem",
           md: "3.5rem",
         }}
-        direction={{
-          base: "column",
-          md: "row",
-        }}
+        gap="1rem"
       />
       <Text
         as="span"
@@ -103,7 +101,7 @@ export function Footer() {
         paddingY="2.25rem"
         borderTop="1px solid rgba(0,0,0,0.25)"
       >
-        © 2023 Ingenium Tecnologia, todos os direitos reservados.
+        © 2024 Ingenium Tecnologia, todos os direitos reservados.
       </Text>
     </Grid>
   )

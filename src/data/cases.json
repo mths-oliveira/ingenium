@@ -1,0 +1,21 @@
+{
+  "title": "Cases",
+  "imageSrc": "/cases.jpg",
+  "sections": [
+    {
+      "title": "Penitenciária Estadual de Vila Velha VI",
+      "content": "Em 25 de Julho de 2023 foi inaugurada a Penitenciária Estadual de Vila Velha VI (PEVV VI) no Complexo Prisional de Xuri, em Vila Velha. São 15 mil metros quadrados de área construiída. Foi criado um sistema que conta com 230 portas automatizadas e software supervisório de controle de abertura e fechamento. Com sistema de acesso por senhas que registra todas as ações realizadas, com possibilidade de retirada de relatórios personalizados por data, porta, operador e muito mais. Além do fornecimento dos equipamentos, fizemos sua instalação, toda infraestrutura e cabeamento, desenvolvimento e implantação do software de controle, e start up de todo sistema. Além da gestão das empresas subcontratadas para instalação dos sistemas elétricos, SPDA, CFTV e controle de acesso.",
+      "imageSrc": "/projeto.jpg"
+    },
+    {
+      "title": "Sistema",
+      "content": "Foram instalados nas 3 salas de controle, tela touchscreen de 40 polegadas, com acesso por senha a cada uma das áreas do empreendimento. Cada usuário pode ser criado e alterado, permitindo ou limitando o acesso a áreas e horarios especificos. Relatorios em tempo real são emitidos informando todas as ações no sistema. 4 tipos de alarmes com niveis de prioridade diferentes são informados ao operador, de acordo com o tipo de anomalia encontrada no sistema. Foi previsto no break que garante 3 horas de funcionamento normal do sistema em caso de falha de energia, e até 12 horas em contingência, reduzindo as operações.",
+      "imageSrc": "/tela.jpg"
+    },
+    {
+      "title": "Mecanismo",
+      "content": "Foram instaladas 230 unidades do mecanismo ITPL001 nos setores de segurança internos e intermediários, cobrindo as celas, circulações, acessos as áreas de trabalho, estudo, cozinha e lavanderia, triagem e visitas.",
+      "imageSrc": "/mecanismo.jpg"
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 import {
   Flex,
   Heading,
+  Icon,
   Image,
+  Link,
   List,
   ListItem,
   SimpleGrid,
@@ -13,6 +15,7 @@ import { useRouter } from "next/router"
 import { formatForLink } from "../utils/remove-accent"
 import Head from "next/head"
 import pages from "../data"
+import { MdArrowForward } from "react-icons/md"
 
 const titles = {
   "sobre-nos": "Sobre nós | Ingenium Tecnologia",
@@ -30,6 +33,7 @@ export default function () {
   )
     return
   const page = pages[router.query.page]
+  const isParceirosPage = router.query.page === "parceiros"
   return (
     <>
       <Head>
@@ -133,28 +137,57 @@ export default function () {
               >
                 <Heading>{section.title}</Heading>
                 {Array.isArray(section.content) ? (
-                  <List
-                    listStyleType="initial"
-                    sx={{
-                      ">li:not(:first-of-type)": {
-                        marginTop: "0.5rem",
-                      },
-                    }}
-                  >
-                    {section.content.map((content) => (
-                      <ListItem
-                        key={content}
-                        transform={{
-                          base: "translateX(1rem)",
-                          sm: "translateX(1.25rem)",
+                  <>
+                    <List
+                      listStyleType="none"
+                      sx={{
+                        ">li:not(:first-of-type)": {
+                          marginTop: "0.5rem",
+                        },
+                      }}
+                    >
+                      {section.content.map((content) => (
+                        <ListItem key={content}>{content}</ListItem>
+                      ))}
+                    </List>
+                    {isParceirosPage && (
+                      <Flex
+                        as={Link}
+                        href={section.link?.href}
+                        target="_blank"
+                        color="blue"
+                        alignItems="center"
+                        position="relative"
+                        width="fit-content"
+                        paddingY="0.5rem"
+                        fontWeight="500"
+                        _after={{
+                          content: `''`,
+                          height: "3px",
+                          width: "0%",
+                          position: "absolute",
+                          left: 0,
+                          bottom: "0",
+                          background: "blue",
+                          transition:
+                            "all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075)",
+                        }}
+                        _hover={{
+                          textDecoration: "none",
+                          _after: {
+                            width: "75%",
+                          },
                         }}
                       >
-                        {content}
-                      </ListItem>
-                    ))}
-                  </List>
+                        {section.link.text}
+                        <Icon as={MdArrowForward} marginLeft="0.25rem" />
+                      </Flex>
+                    )}
+                  </>
                 ) : (
-                  <Text>{section.content}</Text>
+                  <>
+                    <Text>{section.content}</Text>
+                  </>
                 )}
               </Stack>
             </SimpleGrid>

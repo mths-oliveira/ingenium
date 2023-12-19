@@ -3,28 +3,24 @@
   "imageSrc": "/produtos.jpg",
   "sections": [
     {
-      "title": "Portas automáticas para celas",
-      "content": "Dispositivo desenvolvido especificamente para aplicação em ambiente prisional, para fechamento de celas. É um dos ambientes mais inóspitos e sujeitos a vandalismo possível. O mecanismo foi pensado para ser submetido a todo tipo de tentativa de violação possível dentro do ambiente, que fica 24 horas a mercê. Com sistema de abertura automático e possibilidade de redundância manual, travas por solenóide de tração e trancas redundantes, é o sistema ideal para essa aplicação. Podem ser construídas tanto em grade quanto em chapa de aço.",
-      "imageSrc": "/portas-automaticas-para-celas.jpg"
+      "title": "Portas deslizantes para celas e circulações - ITDS001",
+      "content": "O mecanismo foi pensado para ser submetido a todo tipo de tentativa de violação possível dentro do ambiente, incluindo liquidos, impactos com ou sem ferramentas, forçamento de abertura, alavancas, entre outros. O sistema de abertura pode ser motorizado ou com destravamento automatizado e abertura manual. Redundância para abertura manual em caso de falha de energia, travas por solenóide de tração, trancas redundantes, proteção contra liquidos, é o sistema ideal para essa aplicação. As portas podem ser construídas tanto em grade quanto em chapa de aço. Em caso de utilização em circulações, alguns aprimoramentos garantem o atendimento ao maior numero de operações diárias, quando comparadas as celas.",
+      "imageSrc": "/portas-automaticas-para-circulaçoes-em-ambiente-prisional.jpg"
     },
     {
-      "title": "Portas automáticas para circulações em ambiente prisional",
-      "content": "Diferente do dispositivo das celas, a possibilidade de vandalismo é menor, porém com maior demanda de abertura e fechamento por dia. Então o dispositivo foi aprimorado visando sua utilização específica, e mantendo o mesmo nivel de robustez e segurança do dispositivo para celas. Podem ser construídas tanto em grade quanto em chapa de aço.",
-      "imageSrc": "/portas-automaticas-para-circulaçoes-em-ambiente-prisional.jpg"
+      "title": "Portas pivotantes para celas e circulações - ITPL001",
+      "content": "Todo o dispositivo conta com vedações contra projeção de liquidos, e possui sistema de abertura de emergência em caso de falha de energia. Sua abertura é feita com chaves especiais e sob medida cortadas a laser garantindo maior segurança. Todas as peças metálicas do mecanismo são galvanizadas por imersão garantindo uma durabilidade superior e resistência a vandalismo. O acesso as partes móveis é isolado quando fechado e durante o fechamento, o que impede interações no intuito de burlar o sistema. A indicação de porta fechada possui sinalização dupla que impede que a porta esteja em posição diferente da sinalizada, sem que seja facilmente visivel fisicamente. A manutenção é simples, com regulagem facil, substituição de peças tipo plug and play. O que garante que a manutenção ocorra de forma rapida, sem a necessidade de estar por longos periodos de frente ao mecanismo, aumentando a segurança da equipe de manutenção.",
+      "imageSrc": "/porta-pivotante.jpg"
     },
     {
       "title": "Dilacerador de pneus",
       "content": "É o dispositivo adequado para retenção de veículos que tentem acessar áreas isoladas ou controladas. Com corpo totalmente construído em aço maciço, e com peças cortadas a laser para garantir o máximo de performance. Se transforma em um obstáculo intransponível para veículos de pequeno e médio porte, causando graves avarias a veículos de grande porte, independente de seu peso. O acionamento pode ser manual, com botoeira, ou ainda vinculado a um sistema computadorizado de automação.",
       "imageSrc": "/dilacerador-de-pneus.jpg"
     },
-    {
-      "title": "Bollards",
-      "content": "Sistema de acionamento que impede completamente o acesso à área protegida. A parte exposta é feita em aço maciço, com diversos tipos de acabamento. A parte enterrada é feita de liga de metal adequada para cada aplicação, e de acordo com o nivel de proteção que se pretende prever. Com corpo enterrado composto de 2 a 5 vezes sua dimensão exposta, pode ser acionado de forma manual, com botoeira, ou ainda vinculado a um sistema computadorizado de automação.",
-      "imageSrc": "/bollards.jpg"
-    },
+
     {
       "title": "Intercomunicadores antivandalismo",
-      "content": "Sistema de comunicação interno de alta resistência. Possui corpo em chapa de aço completamente a prova de vandalismo. Com sistema aberto, pode comunicar com central própria ou existente via cabo paralelo simples. Sua instalação pode ser aparente, ou embutida. Produto ideal para aplicações de alta demanda como unidades prisionais, plataformas petrolíferas, portos, aeroportos, túneis e elevadores.",
+      "content": "Sistema de comunicação de alta resistência. Possui corpo em chapa de aço completamente a prova de vandalismo. Com sistema aberto, pode comunicar com central própria ou existente via cabo ou radio. Sua instalação pode ser aparente, ou embutida. Substitui de forma eficiente radios comunicadores, otimizando a logistica diária. Todas as mensagens trocadas entre o intercomunicador e a central de atendimento podem ser gravadas para consulta.",
       "imageSrc": "/intercomunicadores.jpg"
     }
   ]

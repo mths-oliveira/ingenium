@@ -3,19 +3,58 @@
   "imageSrc": "/parceiros-capa.jpeg",
   "sections": [
     {
-      "title": "Parceiro A",
-      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe sed quod temporibus animi quos accusamus adipisci assumenda. Magnam eos numquam obcaecati doloribus. Laboriosam impedit doloremque, delectus et autem quod.      ",
-      "imageSrc": "/parceiros.jpg"
+      "title": "Braykes PPP",
+      "content": [
+        "A Braykes PPP é uma empresa fornecedora de consultoria e assessoria para elaboração e execução de projetos de Parceria Público-Privada no Brasil para vários segmentos de mercado.",
+        "Sua equipe altamente qualificada e experiente fornece muito mais do que informação precisa, prática e serviços especializados.",
+        "Ela entrega a seus clientes a tranquilidade de que todo o seu empreendimento em PPP está no rumo certo.",
+        "A Braykes PPP contribui para o crescimento das Parceria Público-Privadas, identificando as melhores práticas internacionais no assunto e aplicando-as para nossos clientes em total sintonia com a legislação brasileira."
+      ],
+      "imageSrc": "/parceiros.jpg",
+      "link": {
+        "href": "www.braykesppp.com.br",
+        "text": "Conheça a Braykes"
+      }
     },
     {
-      "title": "Parceiro B",
-      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe sed quod temporibus animi quos accusamus adipisci assumenda. Magnam eos numquam obcaecati doloribus. Laboriosam impedit doloremque, delectus et autem quod.      ",
-      "imageSrc": "/parceiros.jpg"
+      "title": "GCE S/A",
+      "content": [
+        "Com mais de quatro décadas de experiência na indústria da construção civil, a GCE S/A presta serviços de engenharia e construção entregando obras de alta qualidade.",
+        "Atendemos clientes dos segmentos públicos e privados. Projetos de Parcerias Público-Privadas (PPPs) também compõem nosso portfólio. Somos especialistas em solução de infraestrutura para Data Centers e ambientes de missão crítica.",
+        "Adotamos uma conduta ética e transparente com nossos clientes, parceiros, colaboradores, acionistas e sociedade. Buscamos a excelência operacional, respeitando os compromissos assumidos, garantindo a entrega do empreendimento dentro dos custos e prazos acordados."
+      ],
+      "imageSrc": "/parceiros.jpg",
+      "link": {
+        "href": "https://www.gce.com.br/",
+        "text": "Conheça a GCE"
+      }
     },
     {
-      "title": "Parceiro C",
-      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe sed quod temporibus animi quos accusamus adipisci assumenda. Magnam eos numquam obcaecati doloribus. Laboriosam impedit doloremque, delectus et autem quod.      ",
-      "imageSrc": "/parceiros.jpg"
+      "title": "Gestores Prisionais Associados (GPA)",
+      "content": [
+        "A GPA foi criada com o objetivo de implantar e administrar o Complexo Penitenciário Público-Privado (CPPP) em uma parceria público-privada (PPP) com o Estado de Minas Gerais, por um prazo de 30 anos.",
+        "O trabalho realizado tem por objetivo a custódia do indivíduo privado de liberdade com infraestrutura adequada, segurança e assistência para a sua reinserção social após o cumprimento da pena.",
+        "Existem atualmente três Unidades Prisionais em operação Complexo Penitenciário Público-Privado, sendo a primeira entregue em janeiro de 2013.",
+        "O trabalho realizado pela GPA, em parceria com o Estado de Minas Gerais, tem por objetivo a custódia do indivíduo privado de liberdade com infraestrutura adequada, segurança e assistência para a sua reinserção social após o cumprimento da pena."
+      ],
+      "imageSrc": "/parceiros.jpg",
+      "link": {
+        "href": "https://www.gpappp.com.br/",
+        "text": "Conheça a GPA"
+      }
+    },
+    {
+      "title": "DBN",
+      "content": [
+        "Mais de 40 anos construindo com rapidez e qualidade.",
+        "Referência em tecnologia com a construção de módulos industrializados, já fornecemos mais de 100 unidades penitenciárias e escolas em todo o território Brasileiro.",
+        "Através desse sistema oportunizamos uma solução completa e personalizada do projeto ao acabamento final, tendo como objetivo atender os mais diversos mercados como: comercial e educacional, bem como as áreas de saúde e segurança."
+      ],
+      "imageSrc": "/dbn.jpg",
+      "link": {
+        "href": "https://dbn.eng.br/",
+        "text": "Conheça a DBN"
+      }
     }
   ]
 }

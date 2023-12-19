@@ -1,5 +1,4 @@
 import {
-  Box,
   Flex,
   Heading,
   Icon,
@@ -11,9 +10,8 @@ import {
 import Head from "next/head"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { MdArrowDownward, MdArrowForward, MdFingerprint } from "react-icons/md"
+import { MdArrowDownward, MdArrowForward } from "react-icons/md"
 import data from "../data/home.json"
-import Player from "../components/player"
 
 interface Link {
   text: string
@@ -87,75 +85,7 @@ export default function () {
           <Icon as={MdArrowDownward} />
         </Flex>
       </Flex>
-      <Flex
-        flexDirection="column"
-        alignItems="center"
-        position="relative"
-        _before={{
-          content: `''`,
-          position: "absolute",
-          top: "0",
-          left: "0",
-          width: "100%",
-          zIndex: "-1",
-          height: "calc(100% - 7.5rem)",
-          bg: "offWhite",
-        }}
-      >
-        <Stack
-          spacing="1.25rem"
-          maxWidth="53rem"
-          padding="5rem 6.25rem 2.25rem"
-          textAlign="center"
-          alignSelf="center"
-        >
-          <Heading maxWidth="37.5rem">
-            Software de automação e gestão prisional
-          </Heading>
-          <Text>
-            OmniSafe representa uma revolução na gestão prisional, oferecendo
-            uma solução integrada e abrangente para unidades prisionais
-            modernas. Nosso sistema vai além das expectativas, proporcionando
-            segurança total, eficiência operacional e contribuindo ativamente
-            para o processo de ressocialização.
-          </Text>
-        </Stack>
-        <Flex position="relative" justifyContent="center">
-          <Stack direction="row" spacing="1rem">
-            {[0, 0, 0, 0].map(() => (
-              <Flex
-                flexDirection="column"
-                height="17.5rem"
-                width="12.5rem"
-                borderRadius="5px"
-                boxShadow="xl"
-                bg="white"
-                padding="1rem"
-              >
-                <Box marginBottom="0.5rem" height="140px">
-                  <Box
-                    bg="blue"
-                    padding="0.5rem"
-                    borderRadius="full"
-                    height="4.5rem"
-                    width="4.5rem"
-                    marginBottom="0.5rem"
-                  >
-                    <Icon color="white" fontSize="3.5rem" as={MdFingerprint} />
-                  </Box>
-                  <Text color="black" fontSize="md" fontWeight="semibold">
-                    Lorem ipsum dolor
-                  </Text>
-                </Box>
-                <Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </Text>
-              </Flex>
-            ))}
-          </Stack>
-        </Flex>
-      </Flex>
-      <Player />
+
       <Stack
         flexDirection="column"
         padding={{
