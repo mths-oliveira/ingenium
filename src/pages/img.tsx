@@ -10,7 +10,7 @@ export default function () {
         bg="white"
         padding="2.25rem"
       >
-        <Image src="/dbn.png" height="calc(100%)" objectFit="contain" />
+        <Image src="/rt-logo.jpeg" height="calc(150%)" objectFit="contain" />
       </Center>
     </Center>
   )

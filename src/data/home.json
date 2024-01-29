@@ -21,7 +21,7 @@
     },
     {
       "title": "Produtos",
-      "content": "A Ingenium Tecnologia oferece todos os produtos e soluções que você precisa, para, garantir o maior nivel de segurança à sua organização.",
+      "content": "A Ingenium Tecnologia oferece todos os produtos que você precisa, para, garantir o maior nivel de segurança à sua organização.",
       "imageSrc": "/produtos-solucoes.jpg",
       "link": {
         "href": "/produtos",
@@ -29,7 +29,25 @@
       }
     },
     {
-      "title": "Parceiros e Fornecedores",
+      "title": "Soluções",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, at voluptas. Ducimus quo officia explicabo suscipit optio beatae ipsam impedit ipsa maiores dignissimos! Quia labore, autem praesentium laborum itaque dignissimos.",
+      "imageSrc": "/software-de-automaçao.jpg",
+      "link": {
+        "href": "/solucoes",
+        "text": "Conheça nossas soluções"
+      }
+    },
+    {
+      "title": "Cases",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, at voluptas. Ducimus quo officia explicabo suscipit optio beatae ipsam impedit ipsa maiores dignissimos! Quia labore, autem praesentium laborum itaque dignissimos.",
+      "imageSrc": "/projeto.jpg",
+      "link": {
+        "href": "/cases",
+        "text": "Conheça nossos cases"
+      }
+    },
+    {
+      "title": "Parceiros",
       "content": "A Ingenium é formada por um grupo multidisciplinar, composto por colaboradores, parceiros e fornecedores. Que juntos, constituem uma extensa e complexa cadeia de relações. O que garante a interdisciplinaridade necessária para lidar com tranquilidade e segurança com todo tipo de desafio que possa surgir durante a execução de qualquer um de nossos projetos",
       "imageSrc": "parceiros.jpg",
       "link": {
