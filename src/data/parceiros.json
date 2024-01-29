@@ -55,6 +55,17 @@
         "href": "https://dbn.eng.br/",
         "text": "Conheça a DBN"
       }
+    },
+    {
+      "title": "RT Hidráulica",
+      "content": [
+        "Empresa especializada em instalações hidráulicas predial e industrial com mais de 40 anos de mercado, fruto de um trabalho árduo que passou de geração em geração."
+      ],
+      "imageSrc": "/dbn.jpg",
+      "link": {
+        "href": "https://rthidraulica.com.br/",
+        "text": "Conheça a RT"
+      }
     }
   ]
 }

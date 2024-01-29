@@ -17,12 +17,33 @@ export default function () {
   const [autoplay, setAutoplay] = useState(0)
 
   return (
-    <Flex marginBottom="7.5rem" justifyContent="center" alignItems="center">
-      <Box id="view" width="40rem" height="30rem" boxShadow="lg">
+    <Flex
+      flexDirection={{
+        base: "column",
+        sm: "column",
+        md: "row",
+      }}
+      position="relative"
+      marginBottom={["0", "7.5rem"]}
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Box
+        position="sticky"
+        top="0"
+        left="0"
+        zIndex="10"
+        id="view"
+        width="40rem"
+        maxWidth="100vw"
+        height="30rem"
+        maxHeight="75vw"
+        boxShadow="lg"
+      >
         <Box
           width="100%"
           height="100%"
-          borderRadius="5px"
+          borderRadius={["0", "5px"]}
           as="iframe"
           src={`https://www.youtube.com/embed/${currentVideoId}?autoplay=${autoplay}`}
           allow="accelerometer; encrypted-media; gyroscope; autoplay; picture-in-picture"
@@ -31,12 +52,18 @@ export default function () {
         />
       </Box>
 
-      <Stack marginLeft="1.5rem" spacing="1rem" height="fit-content">
+      <Stack
+        marginLeft={[0, "1.5rem"]}
+        padding={{ base: "1.5rem 1rem" }}
+        spacing={["1.5rem", "1rem"]}
+        height="fit-content"
+      >
         {videos.map(({ videoId, title }) => {
           const isVideoId = videoId === currentVideoId
           return (
             <Flex
-              alignItems="center"
+              flexDirection={["column", "row"]}
+              alignItems={["initial", "center"]}
               cursor="pointer"
               _hover={{
                 ">div>div": {
@@ -50,8 +77,8 @@ export default function () {
             >
               <Box
                 bgImage={`url(http://img.youtube.com/vi/${videoId}/0.jpg)`}
-                width="12rem"
-                height="6.75rem"
+                width={["calc(100vw - 2rem)", "12rem"]}
+                height={["calc((100vw - 2rem) / 16 * 9)", "6.75rem"]}
                 borderRadius="5px"
                 boxShadow="lg"
                 overflow="hidden"
@@ -70,7 +97,11 @@ export default function () {
                   />
                 </Center>
               </Box>
-              <Stack marginLeft="1rem" maxWidth="15rem">
+              <Stack
+                marginLeft={[0, "1rem"]}
+                marginTop={["1rem", "0"]}
+                maxWidth={["100%", "15rem"]}
+              >
                 <Text color="black" fontSize="14px" fontWeight="semibold">
                   {title}
                 </Text>

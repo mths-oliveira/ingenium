@@ -31,7 +31,7 @@ export function Footer() {
     >
       <Stack spacing="1.5rem">
         <Link href="/">
-          <Image src="/ingenium.png" maxWidth="10.5rem" />
+          <Image src="/ingenium.png" maxWidth="10.5rem" marginTop="0.25rem" />
         </Link>
         <List
           width="fit-content"

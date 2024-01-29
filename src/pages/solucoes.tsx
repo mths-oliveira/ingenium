@@ -1,19 +1,7 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Icon,
-  Image,
-  List,
-  ListItem,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react"
+import { Box, Flex, Heading, Icon, Stack, Text } from "@chakra-ui/react"
 import Head from "next/head"
 import { FaBrain, FaRobot, FaUser } from "react-icons/fa"
 import { FaVolumeHigh } from "react-icons/fa6"
-import { motion } from "framer-motion"
 import { formatForLink } from "../utils/remove-accent"
 import page from "../data/solucoes.json"
 import Player from "../components/player"
@@ -83,6 +71,7 @@ export default function () {
           </Stack>
         </Flex>
         <Flex
+          marginBottom={["1.75rem", 0]}
           flexDirection="column"
           alignItems="center"
           position="relative"
@@ -106,8 +95,12 @@ export default function () {
           <Stack
             spacing="1.25rem"
             maxWidth="57rem"
-            padding="5rem 6.5rem 2.25rem"
-            textAlign="center"
+            padding={[
+              "3.5rem 1rem 3.5rem",
+              "3.5rem 1rem 3.5rem",
+              "5rem 6.5rem 2.25rem",
+            ]}
+            textAlign={["left", "center"]}
             alignSelf="center"
           >
             <Heading maxWidth="37.5rem">
@@ -121,8 +114,19 @@ export default function () {
               para o processo de ressocialização.
             </Text>
           </Stack>
-          <Flex position="relative" justifyContent="center">
-            <Stack direction="row" spacing="1rem">
+          <Flex
+            position="relative"
+            justifyContent={{
+              sm: "center",
+            }}
+            maxWidth="100vw"
+            overflow={["auto", "visible"]}
+            paddingBottom={{
+              base: "2.25rem",
+              sm: "0",
+            }}
+          >
+            <Stack direction="row" spacing="1rem" paddingX="1rem">
               {differences.map(({ icon, text, title }) => (
                 <Flex
                   key={title}
@@ -170,7 +174,7 @@ export default function () {
         <Stack
           flexDirection="column"
           padding={{
-            base: "2.25rem 0 0",
+            base: "0",
             sm: "5rem",
             md: "7.5rem",
           }}
@@ -181,7 +185,7 @@ export default function () {
           {page.sections.map((section) => (
             <Stack
               padding={{
-                base: "3rem 1rem",
+                base: "0 1rem 3.5rem",
                 sm: "3rem 0",
                 md: 0,
               }}
