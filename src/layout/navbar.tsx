@@ -45,7 +45,13 @@ function Link({ hash, pathname, href, ...rest }: LinkProps) {
 
 export function NavBar(props: SimpleGridProps) {
   return (
-    <SimpleGrid as="nav" {...props} width="100%" overflow="hidden">
+    <SimpleGrid
+      as="nav"
+      overflow="hidden"
+      width="fit-content"
+      {...props}
+      gap="2.25rem 5rem"
+    >
       {Object.keys(pages).map((pageName) => {
         const page = pages[pageName]
         return (
@@ -61,7 +67,7 @@ export function NavBar(props: SimpleGridProps) {
               <Link pathname={pageName}>{page.title}</Link>
             </ListItem>
             {pageName === "solucoes" && (
-              <ListItem key={"sdaegp"} maxWidth="17rem">
+              <ListItem key={"sdaegp"}>
                 <Link
                   pathname={pageName}
                   hash={formatForLink(
@@ -73,7 +79,7 @@ export function NavBar(props: SimpleGridProps) {
               </ListItem>
             )}
             {page.sections.map((section) => (
-              <ListItem key={section.title} maxWidth="17rem">
+              <ListItem key={section.title}>
                 <Link pathname={pageName} hash={formatForLink(section.title)}>
                   {section.title}
                 </Link>

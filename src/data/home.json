@@ -21,7 +21,7 @@
     },
     {
       "title": "Produtos",
-      "content": "A Ingenium Tecnologia oferece todos os produtos que você precisa, para, garantir o maior nivel de segurança à sua organização.",
+      "content": "A Ingenium Tecnologia desenvolve, fabrica e comercializa soluções para oferecer ao empreendimento o maior nivel de segurança possível. Garantindo integrações com diversas soluções do mercado nacional e internacional, com eficiência, segurança e a máxima economia de insumos, tempo de instalação e custos possível.",
       "imageSrc": "/produtos-solucoes.jpg",
       "link": {
         "href": "/produtos",
@@ -30,7 +30,7 @@
     },
     {
       "title": "Soluções",
-      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, at voluptas. Ducimus quo officia explicabo suscipit optio beatae ipsam impedit ipsa maiores dignissimos! Quia labore, autem praesentium laborum itaque dignissimos.",
+      "content": "Tecnologia a favor da segurança e ressocialização. Nossos sistemas se tornam as ferramentas ideais no apoio operacional diário de unidades prisionais. Tornando as atividades seguras e gerenciando informações de forma simples e didática, oferecendo todo o suporte necessário em tomadas de decisões, principalmente em momentos de crise. Criando um ambiente favorável para o cuidado diário com as atividades de ressocialização.",
       "imageSrc": "/software-de-automaçao.jpg",
       "link": {
         "href": "/solucoes",
@@ -39,7 +39,7 @@
     },
     {
       "title": "Cases",
-      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, at voluptas. Ducimus quo officia explicabo suscipit optio beatae ipsam impedit ipsa maiores dignissimos! Quia labore, autem praesentium laborum itaque dignissimos.",
+      "content": "Conheça um pouco mais dos nossos projetos realizados de desenvolvimento e implantação de tecnologias e soluções para algumas das mais modernas unidades prisionais do país.",
       "imageSrc": "/projeto.jpg",
       "link": {
         "href": "/cases",

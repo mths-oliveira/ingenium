@@ -26,10 +26,10 @@ export function Footer() {
         base: "1fr",
         md: "10.5rem 1fr",
       }}
-      gap="3.5rem 5rem"
+      gap="3.5rem 7.5rem"
       bg="offWhite"
     >
-      <Stack spacing="1.5rem">
+      <Stack spacing="1.5rem" paddingTop="0.25rem">
         <Link href="/">
           <Image src="/ingenium.png" maxWidth="10.5rem" marginTop="0.25rem" />
         </Link>
@@ -88,7 +88,7 @@ export function Footer() {
         </List>
       </Stack>
       <NavBar
-        columns={[1, 2, 3]}
+        columns={[1, 2]}
         spacing={{
           base: "2.25rem",
           md: "3.5rem",
