@@ -50,8 +50,7 @@ export default function () {
           height={{
             base: "calc(100vh - 12.5rem)",
             sm: "calc(100vh - 15rem)",
-            lg: "calc(100vh - 22.5rem)",
-            xl: "calc(100vh - 7.5rem)",
+            lg: "calc(100vh - 7.5rem)",
           }}
         >
           <Stack
