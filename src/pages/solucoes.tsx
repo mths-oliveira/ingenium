@@ -184,6 +184,8 @@ export default function () {
         >
           {page.sections.map((section) => (
             <Stack
+              key={formatForLink(section.title)}
+              id={formatForLink(section.title)}
               padding={{
                 base: "0 1rem 3.5rem",
                 sm: "3rem 0",
