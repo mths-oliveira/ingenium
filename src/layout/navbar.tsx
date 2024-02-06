@@ -62,6 +62,9 @@ export function NavBar(props: SimpleGridProps) {
                 marginBottom: "-0.25rem",
               },
             }}
+            whiteSpace="nowrap"
+            overflow="hidden"
+            textOverflow="ellipsis"
           >
             <ListItem color="black" fontWeight="bold" fontSize="sm">
               <Link pathname={pageName}>{page.title}</Link>
