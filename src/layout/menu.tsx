@@ -86,6 +86,7 @@ export function Menu() {
           </DrawerHeader>
           <DrawerBody padding="0">
             <NavBar
+              overflow="ellipsis"
               spacing="2.25rem"
               padding="2.25rem 1.5rem"
               onClick={(e) => {

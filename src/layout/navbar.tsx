@@ -43,14 +43,18 @@ function Link({ hash, pathname, href, ...rest }: LinkProps) {
   )
 }
 
-export function NavBar(props: SimpleGridProps) {
+interface NavBarProps extends SimpleGridProps {
+  overflow?: "ellipsis" | "brake"
+}
+
+export function NavBar({ overflow = "brake", ...props }: NavBarProps) {
   return (
     <SimpleGrid
       as="nav"
       overflow="hidden"
       width="fit-content"
       {...props}
-      gap="2.25rem 5rem"
+      gap="2.25rem 3.5rem"
     >
       {Object.keys(pages).map((pageName) => {
         const page = pages[pageName]
@@ -61,12 +65,20 @@ export function NavBar(props: SimpleGridProps) {
               ">li:last-of-type": {
                 marginBottom: "-0.25rem",
               },
+              ">li>a>p": {
+                whiteSpace: overflow === "ellipsis" ? "nowrap" : "normal",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              },
             }}
-            whiteSpace="nowrap"
-            overflow="hidden"
-            textOverflow="ellipsis"
+            overflow={overflow === "ellipsis" ? "hidden" : "initial"}
           >
-            <ListItem color="black" fontWeight="bold" fontSize="sm">
+            <ListItem
+              color="black"
+              fontWeight="bold"
+              fontSize="sm"
+              display="block"
+            >
               <Link pathname={pageName}>{page.title}</Link>
             </ListItem>
             {pageName === "solucoes" && (

@@ -88,10 +88,11 @@ export function Footer() {
         </List>
       </Stack>
       <NavBar
-        columns={[1, 2]}
+        overflow="brake"
+        columns={[1, 2, 3]}
         spacing={{
           base: "2.25rem",
-          md: "3.5rem",
+          md: "2.25rem",
         }}
         gap="1rem"
       />
