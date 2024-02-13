@@ -14,10 +14,10 @@ export default class Document extends NextDocument {
           />
           <meta
             name="description"
-            content="Automação predial (BMS), Segurança eletrônica, Automação prisional, Tecnologia da informação TI, Elétrica, Serralheria e Mecatrônica. Integração total entre consultoria, projetos, execução e manutenção. Com grande foco em implantação e upgrade de tecnologias e Retrofit."
+            content="A Ingenium Tecnologia é o maior player de automação prisional do Brasil. Trabalhamos com automação e segurança eletrônica de alto requisito, desenvolvendo tecnologia, e integrando soluções dos principais fabricantes do mercado."
           />
           <meta name="author" content="Matheus Oliveira" />
-          <link rel="icon" href="/favicon.jpg" />
+          <link rel="icon" href="/favicon.jpeg" />
         </Head>
         <body>
           <ColorModeScript initialColorMode="light" />
