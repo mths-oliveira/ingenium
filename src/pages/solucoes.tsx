@@ -33,7 +33,7 @@ export default function () {
   return (
     <>
       <Head>
-        <title>{page.title}</title>
+        <title>{page.title} | Ingenium Tecnologia</title>
       </Head>
       <Flex flexDirection="column">
         <Flex

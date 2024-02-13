@@ -17,12 +17,6 @@ import Head from "next/head"
 import pages from "../data"
 import { MdArrowForward } from "react-icons/md"
 
-const titles = {
-  "sobre-nos": "Sobre nós | Ingenium Tecnologia",
-  servicos: "Automação e segurança eletrônica | Ingenium Tecnologia",
-  produtos: "Produtos e soluções | Ingenium Tecnologia",
-}
-
 const pageNames = Object.keys(pages)
 export default function () {
   const router = useRouter()
@@ -37,7 +31,7 @@ export default function () {
   return (
     <>
       <Head>
-        <title>{titles[router.query.page]}</title>
+        <title>{page.title} | Ingenium Tecnologia</title>
       </Head>
       <Flex flexDirection="column">
         <Flex
