@@ -102,6 +102,7 @@ export default function () {
             ]}
             textAlign={["left", "center"]}
             alignSelf="center"
+            alignItems="center"
           >
             <Heading maxWidth="37.5rem">
               Software de automação e gestão prisional
