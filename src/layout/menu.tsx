@@ -21,15 +21,12 @@ export function Menu() {
     let isScrollUp = false
     window.onscroll = () => {
       const { y } = document.body.getBoundingClientRect()
-      if (y === 0) {
-        setTop(-80)
-        return
-      }
       const currentIsScrollUp = y > lastPosition
+
       if (isScrollUp !== currentIsScrollUp) {
         setTop(isScrollUp ? -80 : 0)
-        if (isScrollUp) button?.focus()
       }
+
       lastPosition = y
       isScrollUp = currentIsScrollUp
     }
@@ -42,7 +39,8 @@ export function Menu() {
         zIndex="10"
         position="fixed"
         width="100%"
-        background="#fff"
+        bg="rgba(255,255,255,0.8)"
+        backdropFilter="saturate(180%) blur(12px)"
         transition="top 200ms ease-in-out"
       >
         <Stack
