@@ -1,4 +1,4 @@
-import { Box, Button, Image, Stack, useDisclosure } from "@chakra-ui/react"
+import { Box, Button, Image, Stack, useDisclosure } from "@chakra-ui/react";
 import {
   Drawer,
   DrawerBody,
@@ -6,31 +6,39 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-} from "@chakra-ui/react"
-import { MdMenu } from "react-icons/md"
-import { NavBar } from "../layout/navbar"
-import Link from "next/link"
-import { useEffect, useState } from "react"
+} from "@chakra-ui/react";
+import { MdMenu } from "react-icons/md";
+import { NavBar } from "../layout/navbar";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export function Menu() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const [top, setTop] = useState(0)
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [top, setTop] = useState(0);
   useEffect(() => {
-    const button = document.getElementById("menu-button")
-    let lastPosition = 0
-    let isScrollUp = false
-    window.onscroll = () => {
-      const { y } = document.body.getBoundingClientRect()
-      const currentIsScrollUp = y > lastPosition
-
-      if (isScrollUp !== currentIsScrollUp) {
-        setTop(isScrollUp ? -80 : 0)
-      }
-
-      lastPosition = y
-      isScrollUp = currentIsScrollUp
+    const hiddenBarPosition = -80;
+    const showBarPosition = 0;
+    function hiddenBar() {
+      setTop(hiddenBarPosition);
     }
-  }, [])
+    function showBar() {
+      setTop(showBarPosition);
+    }
+    let lastPositionY = 0;
+    let lastDirectionIsTop = true;
+    window.onscroll = () => {
+      const { y: currentPositionY } = document.body.getBoundingClientRect();
+      const currentDirectionIsTop = currentPositionY > lastPositionY;
+      if (lastDirectionIsTop === currentDirectionIsTop) {
+        currentDirectionIsTop ? showBar() : hiddenBar();
+      }
+      if (currentPositionY === 0) {
+        hiddenBar();
+      }
+      lastPositionY = currentPositionY;
+      lastDirectionIsTop = currentDirectionIsTop;
+    };
+  }, []);
 
   return (
     <>
@@ -88,13 +96,13 @@ export function Menu() {
               spacing="2.25rem"
               padding="2.25rem 1.5rem"
               onClick={(e) => {
-                if (e.currentTarget === e.target) return
-                onClose()
+                if (e.currentTarget === e.target) return;
+                onClose();
               }}
             />
           </DrawerBody>
         </DrawerContent>
       </Drawer>
     </>
-  )
+  );
 }
